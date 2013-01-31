@@ -1,11 +1,12 @@
 <?php
+define('APP', dirname(__FILE) . DIRECTORY_SEPARATOR . 'app');
+define('LIB', APP . DIRECTORY_SEPARATOR . 'Lib');
+define('VENDOR', APP . DIRECTORY_SEPARATOR . 'Vendor');
 
-require 'Vendor' . DIRECTORY_SEPARATOR . 'Glue' . DIRECTORY_SEPARATOR . 'glue.php';
-require 'Lib' . DIRECTORY_SEPARATOR . 'AutoLoader.php';
+require VENDOR . DIRECTORY_SEPARATOR . 'Glue' . DIRECTORY_SEPARATOR . 'glue.php';
+require LIB . DIRECTORY_SEPARATOR . 'AutoLoader.php';
 
-new AutoLoader('Lib' . DIRECTORY_SEPARATOR . 'Controller');
-
-define('LIB', dirname(__FILE) . DIRECTORY_SEPARATOR . 'Lib');
+new AutoLoader(LIB . DIRECTORY_SEPARATOR . 'Controller');
 
 $routes = array(
 	'/' => 'Index'
