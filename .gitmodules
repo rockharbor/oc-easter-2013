@@ -1,0 +1,3 @@
+[submodule "Vendor/Glue"]
+	path = Vendor/Glue
+	url = https://github.com/jtopjian/gluephp.git
