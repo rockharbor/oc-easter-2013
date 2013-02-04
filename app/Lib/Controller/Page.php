@@ -25,4 +25,9 @@ class Page {
 		include LIB . DIRECTORY_SEPARATOR . 'View' . DIRECTORY_SEPARATOR . 'Layout.php';
 	}
 
+	public function redirect($path = '/') {
+		header("Location: $path");
+		exit();
+	}
+
 }
