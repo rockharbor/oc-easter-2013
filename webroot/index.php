@@ -1,5 +1,5 @@
 <?php
-define('APP', dirname(__FILE) . DIRECTORY_SEPARATOR . 'app');
+define('APP', dirname(dirname(__FILE__)) . DIRECTORY_SEPARATOR . 'app');
 define('LIB', APP . DIRECTORY_SEPARATOR . 'Lib');
 define('VENDOR', APP . DIRECTORY_SEPARATOR . 'Vendor');
 
@@ -9,7 +9,8 @@ require LIB . DIRECTORY_SEPARATOR . 'AutoLoader.php';
 new AutoLoader(LIB . DIRECTORY_SEPARATOR . 'Controller');
 
 $routes = array(
-	'/' => 'Index'
+	'/' => 'Index',
+	'/victory/upload' => 'Upload'
 );
 
 try {
