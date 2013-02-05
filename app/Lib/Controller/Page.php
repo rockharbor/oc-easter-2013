@@ -4,6 +4,14 @@ class Page {
 
 	protected $_vars = array();
 
+	public function requireLogin() {
+		session_start();
+		if (isset($_SESSION['loggedin'])) {
+			return true;
+		}
+		$this->redirect('/login');
+	}
+
 	public function getConfig($value = null) {
 		$config = file_get_contents(APP . DS . 'Config' . DS . 'config.json');
 		$config = json_decode($config);
