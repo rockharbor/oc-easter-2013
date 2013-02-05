@@ -20,4 +20,15 @@ class Admin extends Upload {
 		$this->render('Admin');
 	}
 
+	public function POST($matches) {
+		$filename = null;
+		if (isset($matches[1])) {
+			$filename = $matches[1];
+		}
+
+		$db = new Db();
+		$this->set('success', $db->approve($filename));
+		$this->render('Admin.Complete');
+	}
+
 }

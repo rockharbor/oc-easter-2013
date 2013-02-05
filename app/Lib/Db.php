@@ -20,6 +20,19 @@ class Db {
 		}
 	}
 
+	public function approve($filename) {
+		$sql = "UPDATE `uploads` SET `approved` = 1 WHERE `filename` = :filename";
+		$statement = $this->connection->prepare($sql);
+		$results = $statement->execute(array(':filename' => $filename));
+		if ($results === false) {
+			$error = $statement->errorInfo();
+			// $error[2] is the readable message
+			$this->error = $error[2];
+			return false;
+		}
+		return $statement->rowCount() > 0;
+	}
+
 	public function save($data) {
 		if (is_null($this->connection)) {
 			return false;
