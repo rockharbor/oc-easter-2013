@@ -9,7 +9,7 @@ if (isset($error)) {
 <form method="post" action="/victory/process/<?php echo $tmpname; ?>" enctype="multipart/form-data">
 	<input type="hidden" name="x" value="0" />
 	<input type="hidden" name="y" value="0" />
-	<textarea rows="4" maxlength="140" placeholder="Share your victory"></textarea>
+	<textarea name="note" rows="4" maxlength="140" placeholder="Share your victory"></textarea>
 	<input type="submit" name="submit" value="Declare Victory!" />
 </form>
 <script>

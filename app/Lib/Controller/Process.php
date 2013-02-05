@@ -20,10 +20,22 @@ class Process extends Upload {
 
 		$filename = $this->createImage($matches[1], $_POST);
 		if ($filename !== false) {
-
+			$data = array(
+				'filename' => $filename,
+				'note' => $_POST['note'],
+				'created' => date('Y-m-d')
+			);
+			$db = new Db();
+			if ($db->save($data)) {
+				$this->redirect('/victory/view/'.$matches[1]);
+			} else {
+				$this->set('error', $db->error);
+			}
 		} else {
 			$this->set('error', 'Could not save image. Please try again.');
 		}
+
+		$this->render('Process');
 	}
 
 }

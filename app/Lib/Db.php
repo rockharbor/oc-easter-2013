@@ -20,6 +20,26 @@ class Db {
 		}
 	}
 
+	public function save($data) {
+		if (is_null($this->connection)) {
+			return false;
+		}
+
+		$sql = "INSERT INTO `uploads` (`filename`, `note`, `created`) VALUES(:filename, :note, :created);";
+		$statement = $this->connection->prepare($sql);
+		$statement->bindParam(':filename', $data['filename'], PDO::PARAM_STR);
+		$statement->bindParam(':note', $data['note'], PDO::PARAM_STR, 140);
+		$statement->bindParam(':created', $data['created']);
+		$results = $statement->execute();
+		if ($results === false) {
+			$error = $statement->errorInfo();
+			// $error[2] is the readable message
+			$this->error = $error[2];
+			return false;
+		}
+		return true;
+	}
+
 	public function find($filename) {
 		if (is_null($this->connection)) {
 			return false;
