@@ -7,7 +7,7 @@ class Db {
 	public $error = false;
 
 	public function __construct() {
-		$db = APP . DS . 'database.sqlite3';
+		$db = APP . DS . 'Config' . DS . 'database.sqlite3';
 		try {
 			$this->connection = new PDO(
 				"sqlite:$db",
