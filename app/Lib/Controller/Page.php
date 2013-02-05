@@ -4,6 +4,15 @@ class Page {
 
 	protected $_vars = array();
 
+	public function getConfig($value = null) {
+		$config = file_get_contents(APP . DS . 'Config' . DS . 'config.json');
+		$config = json_decode($config);
+		if ($value) {
+			$config = $config->{$value};
+		}
+		return $config;
+	}
+
 	public function set($varName, $varValue = null) {
 		if (is_array($varName)) {
 			foreach ($varName as $name => $value) {

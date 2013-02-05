@@ -1,3 +1,4 @@
+/app/Config/config.json
 /app/tmp
 /app/database.sqlite3
 /webroot/uploads
