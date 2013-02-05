@@ -5,6 +5,7 @@
 		<meta charset="UTF-8" />
 		<link rel="stylesheet" href="/css/styles.css" />
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.0/jquery-ui.min.js"></script>
 	</head>
 	<body>
 		<?php echo $content; ?>

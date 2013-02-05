@@ -13,6 +13,7 @@ new AutoLoader(LIB . DS . 'Controller');
 $routes = array(
 	'/' => 'Index',
 	'/victory/upload' => 'Upload',
+	'/victory/process/([a-zA-Z0-9]+\.png)' => 'Process',
 	'/image/([a-zA-Z0-9]+\.png)' => 'Image'
 );
 

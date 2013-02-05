@@ -32,6 +32,7 @@ class Upload extends Page {
 			$this->render('Upload');
 		} else {
 			$tmpFile = $this->createThumbnail($_FILES);
+			$this->redirect("/victory/process/$tmpFile");
 		}
 		$this->render('Upload.Success');
 	}
@@ -72,7 +73,36 @@ class Upload extends Page {
 		imagedestroy($image);
 		imagedestroy($thumb);
 
-		return $name;
+		return "$name.png";
+	}
+
+	protected function createImage($filename, $post) {
+		// get image
+		$image = imagecreatefrompng($this->processStorePath . DS . $filename);
+
+		// get mark
+		$markFilename = WEBROOT . DS . 'img' . DS . 'mark.png';
+		$mark = imagecreatefrompng($markFilename);
+		list($width, $height) = getimagesize($markFilename);
+		imagesavealpha($mark, true);
+
+		// copy the mark onto the image where user specified
+		imagecopy($image, $mark, $post['x'], $post['y'], 0, 0, $width, $height);
+
+		$newFilename = $this->finishedStorePath . DS . $filename;
+
+		// save to $processStorePath
+		imagepng($image, $newFilename);
+
+		imagedestroy($image);
+		imagedestroy($mark);
+
+		if (file_exists($newFilename)) {
+			unlink($this->processStorePath . DS . $filename);
+			return $filename;
+		}
+
+		return false;
 	}
 
 	protected function validate($files) {
