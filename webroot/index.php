@@ -6,6 +6,7 @@ define('LIB', APP . DS . 'Lib');
 define('VENDOR', APP . DS . 'Vendor');
 
 require VENDOR . DS . 'Glue' . DS . 'glue.php';
+require LIB . DS . 'Db.php';
 require LIB . DS . 'AutoLoader.php';
 
 new AutoLoader(LIB . DS . 'Controller');
@@ -14,6 +15,7 @@ $routes = array(
 	'/' => 'Index',
 	'/victory/upload' => 'Upload',
 	'/victory/process/([a-zA-Z0-9]+\.png)' => 'Process',
+	'/victory/view/([a-zA-Z0-9]+\.png)' => 'Victory',
 	'/image/([a-zA-Z0-9]+\.png)' => 'Image'
 );
 
