@@ -16,7 +16,8 @@ $routes = array(
 	'/victory/upload' => 'Upload',
 	'/victory/process/([a-zA-Z0-9]+\.png)' => 'Process',
 	'/victory/view/([a-zA-Z0-9]+\.png)' => 'Victory',
-	'/image/([a-zA-Z0-9]+\.png)' => 'Image'
+	'/image/([a-zA-Z0-9]+\.png)' => 'Image',
+	'/admin/?(\d)?' => 'Admin'
 );
 
 try {
