@@ -25,7 +25,7 @@ class Db {
 			return false;
 		}
 
-		$sql = "INSERT INTO `uploads` (`filename`, `note`, `created`) VALUES(:filename, :note, :created);";
+		$sql = "INSERT INTO `uploads` (`filename`, `note`, `created`, `approved`) VALUES(:filename, :note, :created, 0);";
 		$statement = $this->connection->prepare($sql);
 		$statement->bindParam(':filename', $data['filename'], PDO::PARAM_STR);
 		$statement->bindParam(':note', $data['note'], PDO::PARAM_STR, 140);
