@@ -12,7 +12,8 @@ new AutoLoader(LIB . DS . 'Controller');
 
 $routes = array(
 	'/' => 'Index',
-	'/victory/upload' => 'Upload'
+	'/victory/upload' => 'Upload',
+	'/image/([a-zA-Z0-9]+\.png)' => 'Image'
 );
 
 try {
