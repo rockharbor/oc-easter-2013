@@ -2,6 +2,11 @@
 
 class Admin extends Upload {
 
+	public function __construct() {
+		parent::__construct();
+		$this->requireLogin();
+	}
+
 	public function GET($matches) {
 		$db = new Db();
 		$count = $db->findCount();

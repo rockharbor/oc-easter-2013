@@ -18,7 +18,8 @@ $routes = array(
 	'/victory/view/([a-zA-Z0-9]+\.png)' => 'Victory',
 	'/image/([a-zA-Z0-9]+\.png)' => 'Image',
 	'/admin/approve/([a-zA-Z0-9]+\.png)?' => 'Admin',
-	'/admin/?(\d)?' => 'Admin'
+	'/admin/?(\d)?' => 'Admin',
+	'/login' => 'Login'
 );
 
 try {

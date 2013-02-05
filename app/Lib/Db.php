@@ -20,6 +20,21 @@ class Db {
 		}
 	}
 
+	public function login($username, $password) {
+		$sql = "SELECT COUNT(*) FROM `users` where `username` = :username AND `password` = :password LIMIT 1;";
+		$statement = $this->connection->prepare($sql);
+		$statement->bindParam(':username', $username, PDO::PARAM_STR);
+		$statement->bindParam(':password', $password, PDO::PARAM_STR);
+		$results = $statement->execute();
+		if ($results === false) {
+			$error = $statement->errorInfo();
+			// $error[2] is the readable message
+			$this->error = $error[2];
+			return false;
+		}
+		return $statement->fetchColumn() > 0;
+	}
+
 	public function approve($filename) {
 		$sql = "UPDATE `uploads` SET `approved` = 1 WHERE `filename` = :filename";
 		$statement = $this->connection->prepare($sql);
