@@ -4,7 +4,7 @@ class Page {
 
 	protected $_vars = array();
 
-	public function set($varName, $varValue) {
+	public function set($varName, $varValue = null) {
 		if (is_array($varName)) {
 			foreach ($varName as $name => $value) {
 				$this->_vars[$name] = $value;
