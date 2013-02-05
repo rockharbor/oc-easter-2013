@@ -17,7 +17,7 @@ class Upload extends Page {
 
 	public function __construct() {
 		$this->processStorePath = APP . DS . 'tmp';
-		$this->finishedStorePath = WEBROOT . DS . 'images';
+		$this->finishedStorePath = WEBROOT . DS . 'uploads';
 	}
 
 	public function GET() {
