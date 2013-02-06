@@ -26,6 +26,30 @@
 		</script>
 	</head>
 	<body>
+		<input id="show-nav" type="checkbox" role="button" class="accessibility" />
+		<label for="show-nav">
+			<span class="accessibility">Menu</span>
+			<span>&#8593;</span>
+		</label>
+		<nav>
+			<ul>
+				<li><a href="/">Home</a></li>
+				<li><a href="/pages/what-is-mark">What is <span class="mark">Mark</span>?</a></li>
+				<li><a href="/victory/upload">Share a <span class="mark">Mark</span> Story</a></li>
+				<li>
+					<a href="/pages/easter-celebration">Easter Celebration</a>
+					<ul>
+						<li><a href="/pages/what-to-expect">What to Expect</a></li>
+						<li><a href="/pages/gallery">Gallery</a></li>
+						<li><a href="/pages/why-celebrate">Why Celebrate</a></li>
+						<li><a href="/pages/kids">Kids</a></li>
+						<li><a href="/pages/directions">Directions</a></li>
+						<li><a href="/pages/sponsor-a-seat">Sponsor a Seat</a></li>
+						<li><a href="/pages/church-directory">Church Directory</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
 		<div class="content">
 			<?php echo $content; ?>
 		</div>

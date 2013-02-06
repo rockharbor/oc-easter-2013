@@ -1,3 +1,91 @@
+body {
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 7em; /*= 50 for nav + 20 margin */
+
+	font-size: 62.5%; /*= reset browser to 10px */
+}
+
+p,
+a
+{
+	color: #000;
+	font-size: 1.2em; /*= 12px */
+	text-decoration: none;
+}
+
+h1 {
+	font-size: 2.4em; /*= 24px */
+}
+
+.accessibility {
+	position: absolute;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+/*= Nav
+************************************/
+[for=show-nav] {
+	cursor: pointer;
+	position: absolute;
+	top: 5em;
+	left: 50%;
+	height: 5em; /*= 50px */
+	width: 10em; /*= 100px */
+	margin-left: -5em; /*= 50px */
+	margin-top: -5em; /*= -50px */
+
+	background: #8c2929;
+
+	text-align: center;
+	color: #fff;
+
+	-webkit-transition: .125s linear all;
+	-moz-transition: .125s linear all;
+	-ms-transition: .125s linear all;
+	-o-transition: .125s linear all;
+	transition: .125s linear all;
+}
+
+#show-nav:checked ~ [for=show-nav] {
+	top: 20em; /*= 200px - 150 for nav menu, 50 for nav button */
+}
+
+#show-nav:checked ~ nav {
+	top: 0;
+}
+
+nav {
+	width: 100%;
+	height: 15em; /*= 150px */
+	position: absolute;
+	top: -15em; /*= -150px */
+	z-index: 2;
+
+	text-align: center;
+
+	box-shadow: inset 0 0 5px 5px rgba(136, 136, 136, .2);
+
+	background: #fff;
+
+	-webkit-transition: .125s linear all;
+	-moz-transition: .125s linear all;
+	-ms-transition: .125s linear all;
+	-o-transition: .125s linear all;
+	transition: .125s linear all;
+}
+
+nav > ul {
+	margin: 0 auto;
+	width: 200px;
+	margin-top: 1em;
+}
+
+nav ul li ul li a {
+	color: #6d6e71;
+}
 
 .button {
 	padding: 5px;
