@@ -32,6 +32,11 @@ class Page {
 	}
 
 	public function render($view = 'Error') {
+		$layout = 'Layout';
+		if (!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') {
+			$layout = 'Ajax';
+		}
+
 		if (!isset($this->_vars['title'])) {
 			$this->_vars['title'] = $view;
 		}
@@ -39,7 +44,7 @@ class Page {
 		extract($this->_vars);
 		include LIB . DIRECTORY_SEPARATOR . 'View' . DIRECTORY_SEPARATOR . "$view.php";
 		$content = ob_get_clean();
-		include LIB . DIRECTORY_SEPARATOR . 'View' . DIRECTORY_SEPARATOR . 'Layout.php';
+		include LIB . DIRECTORY_SEPARATOR . 'View' . DIRECTORY_SEPARATOR . "$layout.php";
 	}
 
 	public function redirect($path = '/') {
