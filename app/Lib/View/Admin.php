@@ -10,7 +10,7 @@
 	<tbody>
 		<?php foreach ($results as $result): ?>
 		<?php
-		$form = "<form action=\"/admin/approve/$result->filename\" method=\"post\">";
+		$form = "<form data-ajax=\"approveComplete\" action=\"/admin/approve/$result->filename\" method=\"post\">";
 		$form .= "<input type=\"submit\" value=\"Approve\" />";
 		$form .= "</form>";
 		?>
@@ -37,3 +37,11 @@ while ($c < count($pages)) {
 if ($page < $maxpages) {
 	echo '<a href="/admin/'.($page+1).'">Next</a>';
 }
+?>
+<script>
+	function approveComplete(data, status, xhr) {
+		if (data == '1') {
+			$(this).parent('td').html('&#x2713;');
+		}
+	}
+</script>
