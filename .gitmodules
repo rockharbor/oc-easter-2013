@@ -1,3 +1,6 @@
 [submodule "app/Vendor/Glue"]
 	path = app/Vendor/Glue
 	url = https://github.com/jtopjian/gluephp.git
+[submodule "webroot/js/form"]
+	path = webroot/js/form
+	url = https://github.com/malsup/form.git
