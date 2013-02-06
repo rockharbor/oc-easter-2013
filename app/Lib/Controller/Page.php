@@ -40,6 +40,11 @@ class Page {
 	}
 
 	public function render($view = 'Error') {
+		// change view name from a-slug to CamelCase
+		$viewParts = explode('-', $view);
+		$viewParts = array_map('ucfirst', $viewParts);
+		$view = implode('', $viewParts);
+
 		$layout = 'Layout';
 		if (!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') {
 			$layout = 'Ajax';
