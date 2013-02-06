@@ -4,6 +4,14 @@ class Page {
 
 	protected $_vars = array();
 
+	public function GET($matches) {
+		if (!isset($matches[1])) {
+			$error = new Error();
+			$error->render();
+		}
+		$this->render($matches[1]);
+	}
+
 	public function requireLogin() {
 		session_start();
 		if (isset($_SESSION['loggedin'])) {
@@ -40,11 +48,18 @@ class Page {
 		if (!isset($this->_vars['title'])) {
 			$this->_vars['title'] = $view;
 		}
+
+		$viewPath = LIB . DS . 'View' . DS;
+		if (!file_exists($viewPath . DS . "$view.php")) {
+			$error = new Error();
+			$error->render();
+			return;
+		}
 		ob_start();
 		extract($this->_vars);
-		include LIB . DIRECTORY_SEPARATOR . 'View' . DIRECTORY_SEPARATOR . "$view.php";
+		include $viewPath . DS . "$view.php";
 		$content = ob_get_clean();
-		include LIB . DIRECTORY_SEPARATOR . 'View' . DIRECTORY_SEPARATOR . "$layout.php";
+		include $viewPath . DS . "$layout.php";
 	}
 
 	public function redirect($path = '/') {
