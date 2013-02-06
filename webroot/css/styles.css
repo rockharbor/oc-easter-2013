@@ -88,7 +88,19 @@ nav ul li ul li a {
 }
 
 .button {
-	padding: 5px;
+	cursor: pointer;
+
+	padding: 1em .7em; /*= 10px 7px */
+
+	background: rgb(140, 41, 41);
+	background: rgba(140, 41, 41, .6);
+
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.button:hover {
+	background: rgb(140, 41, 41);
 }
 
 /*= Upload Form
