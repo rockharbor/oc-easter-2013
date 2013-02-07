@@ -102,6 +102,23 @@ class Db {
 		return $results;
 	}
 
+	public function findAllApproved() {
+		$sql = "SELECT * FROM `uploads` WHERE `approved` = 1;";
+		$statement = $this->connection->prepare($sql);
+		$results = $statement->execute();
+		if ($results === false) {
+			$error = $statement->errorInfo();
+			// $error[2] is the readable message
+			$this->error = $error[2];
+			return false;
+		}
+		$results = $statement->fetchAll(PDO::FETCH_CLASS);
+		if ($results === false) {
+			return array();
+		}
+		return $results;
+	}
+
 	public function find($filename) {
 		if (is_null($this->connection)) {
 			return false;

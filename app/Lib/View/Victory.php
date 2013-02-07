@@ -1,9 +1,15 @@
-<?php
-if (isset($error)): ?>
-<p class="error"><?php echo $error; ?></p>
-<?php else: ?>
-<img src="/uploads/<?php echo $result->filename; ?>" alt="Victory" />
-<p>
-	<?php echo $result->note; ?>
-</p>
-<?php endif; ?>
+<section>
+	<article class="clearfix``">
+		<?php
+		if (isset($error)): ?>
+		<p class="error"><?php echo $error; ?></p>
+		<?php else: ?>
+		<div class="image-container full">
+			<img src="/uploads/<?php echo $result->filename; ?>" alt="Victory" />
+		</div>
+		<p>
+			<?php echo $result->note; ?>
+		</p>
+		<?php endif; ?>
+	</article>
+</section>

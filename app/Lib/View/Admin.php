@@ -15,7 +15,7 @@
 		$form .= "</form>";
 		?>
 		<tr>
-			<td><img class="image small" src="/uploads/<?php echo $result->filename; ?>" /></td>
+			<td><img class="small" src="/uploads/<?php echo $result->filename; ?>" /></td>
 			<td><?php echo $result->note; ?></td>
 			<td><?php echo $result->created; ?></td>
 			<td><?php echo $result->approved ? '&#x2713;' : $form; ?></td>

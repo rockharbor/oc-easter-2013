@@ -6,16 +6,33 @@ body {
 	font-size: 62.5%; /*= reset browser to 10px */
 }
 
+section {
+	position: relative;
+}
+
+section article {
+	position: relative;
+	max-width: 50%;
+	margin: 0 auto;
+
+	text-align: center;
+}
+
 p,
 a
 {
 	color: #000;
 	font-size: 1.2em; /*= 12px */
 	text-decoration: none;
+	text-align: left;
 }
 
 h1 {
 	font-size: 2.4em; /*= 24px */
+}
+
+img {
+	max-width: 100%;
 }
 
 .accessibility {
@@ -25,9 +42,55 @@ h1 {
 	overflow: hidden;
 }
 
+.image-container {
+	position: relative;
+	display: inline-block;
+	padding: 1%;
+	max-width: 45.5%;
+	margin-right: 2.5%;
+	float: left;
+
+	background: rgb(140, 41, 41);
+	background: rgba(140, 41, 41, .6);
+
+	text-align: center;
+}
+
+.image-container.full {
+	max-width: 100%;
+	float: none;
+}
+
+.image-container:nth-child(even) {
+	margin-right: 0;
+	margin-left: 2.5%;
+}
+
+.image-container p {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 5%;
+	margin: 5%;
+	width: 80%;
+	height: 80%;
+	display: none;
+
+	text-align: left;
+	color: #fff;
+
+	background: rgb(0, 0, 0);
+	background: rgba(0, 0, 0, .4);
+}
+
+.image-container:hover p {
+	display: block;
+}
+
 /*= Nav
 ************************************/
 [for=show-nav] {
+	z-index: 2;
 	cursor: pointer;
 	position: absolute;
 	top: 5em;
@@ -125,7 +188,7 @@ nav ul li ul li a {
 
 /*= Admin
 ************************************/
-.image.small {
+img.small {
 	width: 100px;
 	height: 100px;
 }
