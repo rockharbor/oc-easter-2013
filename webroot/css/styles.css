@@ -56,6 +56,7 @@ img {
 
 .accessibility {
 	position: absolute;
+	left: -9999em;
 	height: 1px;
 	width: 1px;
 	overflow: hidden;
