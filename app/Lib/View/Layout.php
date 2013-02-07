@@ -37,7 +37,7 @@
 			<ul>
 				<li><a href="/">Home</a></li>
 				<li><a href="/pages/what-is-mark">What is <span class="mark">Mark</span>?</a></li>
-				<li><a href="/victory/upload">Share a <span class="mark">Mark</span> Story</a></li>
+				<li><a href="/victory/view">Share a <span class="mark">Mark</span> Story</a></li>
 				<li>
 					<a href="/pages/easter-celebration">Easter Celebration</a>
 					<ul>
