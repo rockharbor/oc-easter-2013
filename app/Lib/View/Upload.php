@@ -16,19 +16,18 @@ if (isset($error)) {
 		e.preventDefault();
 		var form = $(this).ajaxSubmit({
 			dataType: 'html',
-			resetForm: true
+			resetForm: true,
+			success: function(response) {
+				$('#uploadForm').closest('.content').html(response);
+			}
 		});
-		var xhr = form.data('jqxhr');
-		xhr.done(function(response) {
-			$('#uploadForm').parents('.content').html(response);
-		});
+		return false;
 	});
 	$('.upload')
 		.addClass('button js')
-		.html(function() {
-			return $(this).find(':submit').val() + $(this).html();
-		})
+		.children('form')
+			.before('<span>'+$('#uploadForm').find(':submit').val()+'</span>')
 	$('#uploadForm :file').change(function() {
 		$('#uploadForm').submit();
-	})
+	});
 </script>
