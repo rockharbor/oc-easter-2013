@@ -68,7 +68,15 @@ class Page {
 	}
 
 	public function redirect($path = '/') {
-		header("Location: $path");
+		global $routes;
+
+		if (!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') {
+			$_SERVER['REQUEST_METHOD'] = 'GET';
+			$_SERVER['REQUEST_URI'] = $path;
+			glue::stick($routes);
+		} else {
+			header("Location: $path");
+		}
 		exit();
 	}
 
