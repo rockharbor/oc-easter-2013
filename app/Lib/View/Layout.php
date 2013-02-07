@@ -9,19 +9,21 @@
 		<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.0/jquery-ui.min.js"></script>
 		<script src="/js/form/jquery.form.js"></script>
 		<script>
-			$(document).on('click', 'form[data-ajax]', function() {
-				var el = $(this);
-				var context = this;
-				$.ajax({
-					url: el.prop('action'),
-					type: el.prop('method'),
-					success: function(data, status, xhr) {
-						window[el.data('ajax')].apply(context, [
-							data, status, xhr
-						]);
-					}
-				})
-				return false;
+			$(document).ready(function() {
+				$(document).on('click', 'form[data-ajax]', function() {
+					var el = $(this);
+					var context = this;
+					$.ajax({
+						url: el.prop('action'),
+						type: el.prop('method'),
+						success: function(data, status, xhr) {
+							window[el.data('ajax')].apply(context, [
+								data, status, xhr
+							]);
+						}
+					})
+					return false;
+				});
 			});
 		</script>
 	</head>
