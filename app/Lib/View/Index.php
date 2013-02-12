@@ -1,8 +1,17 @@
 <script>
 	(function($) {
+		// let the js do the scrolling
+		$('.scroll').css('overflow', 'hidden');
+		// hide content
+		$('.scroll section article').hide();
+
+		// initialize first slide
+		$('.scroll section:first-child article').delay(showDelay).fadeIn();
+
 		var selected = 0;
 		var total = $('.scroll section').length;
 		var w = $('.scroll section').width();
+		var showDelay = 2000;
 
 		$('.content').swipe({
 			triggerOnTouchEnd : true,
@@ -11,6 +20,7 @@
 
 				switch (phase) {
 					case 'move':
+						$('.scroll section article').fadeOut();
 						if (direction == 'left') {
 							scrollTo((w * selected) + distance, 0);
 						} else if (direction == 'right') {
@@ -26,6 +36,7 @@
 						break;
 					default:
 						scrollTo(w * selected);
+						showCurrent();
 				}
 			}
 		});
@@ -33,11 +44,17 @@
 		function next() {
 			selected = Math.min(selected+1, total-1);
 			scrollTo(w * selected);
+			showCurrent();
 		}
 
 		function prev() {
 			selected = Math.max(selected-1, 0);
 			scrollTo(w * selected);
+			showCurrent();
+		}
+
+		function showCurrent() {
+			$('.scroll section:nth-child('+(selected+1)+') article').delay(showDelay).fadeIn();
 		}
 
 		function scrollTo(distance, duration) {
