@@ -4,3 +4,6 @@
 [submodule "webroot/js/form"]
 	path = webroot/js/form
 	url = https://github.com/malsup/form.git
+[submodule "webroot/js/touchswipe"]
+	path = webroot/js/touchswipe
+	url = https://github.com/mattbryson/TouchSwipe-Jquery-Plugin.git

@@ -1,7 +1,12 @@
-body {
+html,
+body
+{
 	width: 100%;
+	height: 100%;
+}
+
+body {
 	margin: 0 auto;
-	margin-top: 7em; /*= 50 for nav + 20 margin */
 
 	font-size: 62.5%; /*= reset browser to 10px */
 }
@@ -33,6 +38,21 @@ h1 {
 
 img {
 	max-width: 100%;
+}
+
+.content {
+	width: 100%;
+	height: 100%;
+
+	overflow: hidden;
+
+	min-width:100px;
+	width: auto !important;
+	width: 100px;
+}
+
+.content section {
+	margin-top: 7em; /*= 50 for nav + 20 margin */
 }
 
 .button {
@@ -105,6 +125,31 @@ img {
 
 .image-container:hover p {
 	display: block;
+}
+
+/*= Scroll
+************************************/
+section.fullsize {
+	margin: 0;
+	padding: 0;
+	display: inline !ie7;
+	display: inline-block;
+	zoom: 1;
+	height: 100%;
+	width: 96%; /* let the next image bleed onto the screen */
+	margin-left: -2px; /* handle pixel fractions due to percentage width */
+}
+
+section.fullsize:last-child {
+	/* last image should take up the whole screen and compensate for
+	previous margins */
+	width: 101%;
+}
+
+.scroll {
+	width: 100%;
+	height: 100%;
+	white-space: nowrap;
 }
 
 /*= Nav
