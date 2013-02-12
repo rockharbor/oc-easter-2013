@@ -13,7 +13,7 @@
 		<?php endforeach; ?>
 	</article>
 </section>
-<div class="content upload-slide">
+<div class="content auto upload-slide">
 </div>
 <script>
 	(function($) {
