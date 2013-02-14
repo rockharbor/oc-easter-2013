@@ -1,3 +1,25 @@
+@font-face {
+	font-family: 'plutosans';
+	src: url('fonts/plutosansregular_2-webfont.eot');
+	src: url('fonts/plutosansregular_2-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/plutosansregular_2-webfont.woff') format('woff'),
+		 url('fonts/plutosansregular_2-webfont.ttf') format('truetype'),
+		 url('fonts/plutosansregular_2-webfont.svg#pluto_sans_regularregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'donatora';
+	src: url('fonts/donatora-bold-webfont.eot');
+	src: url('fonts/donatora-bold-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/donatora-bold-webfont.woff') format('woff'),
+		 url('fonts/donatora-bold-webfont.ttf') format('truetype'),
+		 url('fonts/donatora-bold-webfont.svg#donatorabold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
 html,
 body
 {
@@ -26,14 +48,26 @@ section article {
 p,
 a
 {
+	font-family: donatora, Helvetica, Arial, sans-serif;
 	color: #000;
 	font-size: 1.2em; /*= 12px */
 	text-decoration: none;
 	text-align: left;
+	color: #fff;
+}
+
+p {
+	padding: 5px;
+
+	background: #000;
+	background: rgba(0, 0, 0, .4);
 }
 
 h1 {
+	font-family: plutosans, Helvetica, Arial, sans-serif;
 	font-size: 2.4em; /*= 24px */
+	font-weight: normal;
+	text-shadow: -2px -2px 3px rgba(0, 0, 0, .4);
 }
 
 img {
