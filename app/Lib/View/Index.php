@@ -14,7 +14,6 @@
 		var hash = window.location.hash;
 		if (window.history.pushState && $(hash).length > 0) {
 			selected = $('.scroll section').index($(hash));
-			console.log('based on hash '+selected);
 		}
 
 		// initialize slide, and update history if this isn't the first
