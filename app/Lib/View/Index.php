@@ -111,5 +111,22 @@
 			this.scrollLeft = 0;
 			return false;
 		});
+
+		// configure videos
+		$('video')
+			.each(function() {
+				var w = $(this).width();
+				var h = w*9/16;
+				$(this).attr('height', h);
+			})
+			.mediaelementplayer({
+				pluginPath: '/js/mediaelement/build/flashmediaelement.swf',
+				success: function(media, node) {
+					if (media.pluginType !== 'native' && jQuery(node).attr('data-streamfile')) {
+						media.setSrc(jQuery(node).attr('data-streamfile'));
+						media.load();
+					}
+				}
+			});
 	});
 </script>

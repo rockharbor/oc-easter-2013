@@ -306,3 +306,14 @@ img.small {
 	width: 100px;
 	height: 100px;
 }
+
+.mejs-controls .mejs-time-rail .mejs-time-loaded {
+	background: #8c2929;
+	background: rgba(140, 41, 41, 0.8);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(140, 41, 41,0.8)), to(rgba(140, 41, 41,0.6)));
+	background: -webkit-linear-gradient(top, rgba(140, 41, 41,0.8), rgba(140, 41, 41,0.6));
+	background: -moz-linear-gradient(top, rgba(140, 41, 41,0.8), rgba(140, 41, 41,0.6));
+	background: -o-linear-gradient(top, rgba(140, 41, 41,0.8), rgba(140, 41, 41,0.6));
+	background: -ms-linear-gradient(top, rgba(140, 41, 41,0.8), rgba(140, 41, 41,0.6));
+	background: linear-gradient(rgba(140, 41, 41,0.8), rgba(140, 41, 41,0.6));
+}

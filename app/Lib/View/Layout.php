@@ -4,11 +4,13 @@
 		<title><?php echo $title; ?> | OC Easter 2013</title>
 		<meta charset="UTF-8" />
 		<link rel="stylesheet" href="/css/reset.css" />
+		<link rel="stylesheet" href="/js/mediaelement/build/mediaelementplayer.min.css" />
 		<link rel="stylesheet" href="/css/styles.css" />
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
 		<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.0/jquery-ui.min.js"></script>
 		<script src="/js/form/jquery.form.js"></script>
 		<script src="/js/touchswipe/jquery.touchSwipe.min.js"></script>
+		<script src="/js/mediaelement/build/mediaelement-and-player.min.js"></script>
 		<script>
 			$(document).ready(function() {
 				$(document).on('click', 'form[data-ajax]', function() {
