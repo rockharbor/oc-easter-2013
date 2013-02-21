@@ -3,6 +3,7 @@
 	<head>
 		<title><?php echo $title; ?> | OC Easter 2013</title>
 		<meta charset="UTF-8" />
+		<meta name="viewport" content="initial-scale=1.0,width=device-width,maximum-scale=1.0,user-scalable=0" />
 		<link rel="stylesheet" href="/css/reset.css" />
 		<link rel="stylesheet" href="/js/mediaelement/build/mediaelementplayer.min.css" />
 		<link rel="stylesheet" href="/css/styles.css" />
