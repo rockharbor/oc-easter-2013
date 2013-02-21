@@ -88,7 +88,7 @@ $testVideo = '<video src="/img/vid.mp4" controls preload="none"></video>'
 		scrollTo(w * selected);
 		showCurrent(selected === 0);
 
-		$('.content').swipe({
+		$('.scroll').swipe({
 			triggerOnTouchEnd : true,
 			allowPageScroll: false,
 			swipeStatus: function (event, phase, direction, distance) {
