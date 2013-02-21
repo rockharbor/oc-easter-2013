@@ -12,7 +12,7 @@
 
 		// check if this was linked to and take them to the slide
 		var hash = window.location.hash;
-		if (window.history.pushState && $(hash).length > 0) {
+		if (Modernizr.history && $(hash).length > 0) {
 			selected = $('.scroll section').index($(hash));
 		}
 
@@ -63,7 +63,7 @@
 				updateHistory = true;
 			}
 			$('.scroll section:nth-child('+(selected+1)+') article').delay(showDelay).fadeIn();
-			if (updateHistory && window.history.pushState) {
+			if (updateHistory && Modernizr.history) {
 				var selectedId = $('.scroll section:nth-child('+(selected+1)+')').prop('id');
 				window.history.pushState(null, null, '#'+selectedId);
 			}
@@ -96,7 +96,7 @@
 			});
 		}
 
-		if (window.history.pushState) {
+		if (Modernizr.history) {
 			window.addEventListener('popstate', function(e) {
 				selected = $('.scroll section').index($(window.location.hash));
 				scrollTo(w * selected);
