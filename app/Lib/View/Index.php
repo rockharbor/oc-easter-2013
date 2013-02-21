@@ -3,96 +3,90 @@
 $testStory = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non porta magna. Vivamus dignissim volutpat scelerisque. Nulla convallis consectetur nisi eget bibendum. Sed semper adipiscing leo, elementum dictum metus convallis nec. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur est sapien, sagittis ac vehicula ac, laoreet vitae arcu. Quisque congue eleifend molestie. Mauris malesuada tellus ac quam venenatis pulvinar. Integer bibendum sagittis auctor. Nulla quis feugiat mauris. Vestibulum vel lectus nisi. Suspendisse vitae lacus consectetur nisl blandit pellentesque. Integer commodo odio eget quam tincidunt in vulputate lacus facilisis. Maecenas facilisis sem quis orci posuere dapibus. Vivamus quis dui est. Nunc cursus iaculis iaculis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non porta magna. Vivamus dignissim volutpat scelerisque. Nulla convallis consectetur nisi eget bibendum. Sed semper adipiscing leo, elementum dictum metus convallis nec. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur est sapien, sagittis ac vehicula ac, laoreet vitae arcu. Quisque congue eleifend molestie. Mauris malesuada tellus ac quam venenatis pulvinar. Integer bibendum sagittis auctor. Nulla quis feugiat mauris. Vestibulum vel lectus nisi. Suspendisse vitae lacus consectetur nisl blandit pellentesque. Integer commodo odio eget quam tincidunt in vulputate lacus facilisis.';
 $testVideo = '<video src="/img/vid.mp4" controls preload="none"></video>'
 ?>
-<div class="scroll">
+<section class="scroll">
 
-	<section id="story1" class="fullsize fullbackground bg1">
-		<article>
-			<p><?php echo $testStory; ?></p>
-		</article>
-	</section>
+	<article id="story1">
+		<p><?php echo $testStory; ?></p>
+	</article>
 
-	<section id="story2" class="fullsize fullbackground bg2">
-		<article>
-			<?php echo $testVideo; ?>
-		</article>
-	</section>
+	<article id="story2">
+		<?php echo $testVideo; ?>
+	</article>
 
-	<section id="story3" class="fullsize fullbackground bg3">
-		<article>
-			<?php echo $testVideo; ?>
-		</article>
-	</section>
+	<article id="story3">
+		<?php echo $testVideo; ?>
+	</article>
 
-	<section id="story4" class="fullsize fullbackground bg4">
-		<article>
-			<p><?php echo $testStory; ?></p>
-		</article>
-	</section>
+	<article id="story4">
+		<p><?php echo $testStory; ?></p>
+	</article>
 
-	<section id="story5" class="fullsize fullbackground bg5">
-		<article>
-			<?php echo $testVideo; ?>
-		</article>
-	</section>
+	<article id="story5">
+		<?php echo $testVideo; ?>
+	</article>
 
-	<section id="story6" class="fullsize fullbackground bg6">
-		<article>
-			<?php echo $testVideo; ?>
-		</article>
-	</section>
+	<article id="story6">
+		<?php echo $testVideo; ?>
+	</article>
 
-	<section id="story7" class="fullsize fullbackground bg7">
-		<article>
-			<p><?php echo $testStory; ?></p>
-		</article>
-	</section>
+	<article id="story7">
+		<p><?php echo $testStory; ?></p>
+	</article>
 
-	<section id="story8" class="fullsize fullbackground bg8">
-		<article>
-			<?php echo $testVideo; ?>
-		</article>
-	</section>
+	<article id="story8">
+		<?php echo $testVideo; ?>
+	</article>
 
-	<section id="story9" class="fullsize fullbackground bg9">
-		<article>
-			<?php echo $testVideo; ?>
-		</article>
-	</section>
+	<article id="story9">
+		<?php echo $testVideo; ?>
+	</article>
 
-	<section id="story10" class="fullsize fullbackground bg10">
-		<article>
-			<?php echo $testVideo; ?>
-		</article>
-	</section>
+	<article id="story10">
+		<?php echo $testVideo; ?>
+	</article>
 
 </div>
+
+<div class="multi background">
+	<div class="bg1"></div>
+	<div class="bg2"></div>
+	<div class="bg3"></div>
+	<div class="bg4"></div>
+	<div class="bg5"></div>
+	<div class="bg6"></div>
+	<div class="bg7"></div>
+	<div class="bg8"></div>
+	<div class="bg9"></div>
+	<div class="bg10"></div>
+</div>
+
 <script>
 	$(document).ready(function() {
 		// let the js do the scrolling
-		$('.scroll').css('overflow', 'hidden');
+		$('.background').css('overflow', 'hidden');
 		// hide content
-		$('.scroll section article').hide();
+		$('.scroll article').hide();
 
 		var selected = 0;
-		var total = $('.scroll section').length;
-		var w = $('.scroll section').width();
+		var total = $('.background div').length;
+		var w = getWidth();
 		var showDelay = 2000;
 
 		// check if this was linked to and take them to the slide
 		var hash = window.location.hash;
 		if (Modernizr.history && $(hash).length > 0) {
-			selected = $('.scroll section').index($(hash));
+			selected = $('.scroll article').index($(hash));
 		}
 
 		// initialize slide, and update history if this isn't the first
 		scrollTo(w * selected);
 		showCurrent(selected === 0);
 
-		$('.scroll').swipe({
+		$('.background').swipe({
 			triggerOnTouchEnd : true,
 			allowPageScroll: false,
 			swipeStatus: function (event, phase, direction, distance) {
-				w = $('.scroll section').width();
+				w = getWidth();
 
 				switch (phase) {
 					case 'move':
@@ -131,14 +125,18 @@ $testVideo = '<video src="/img/vid.mp4" controls preload="none"></video>'
 			showCurrent();
 		}
 
+		function getWidth() {
+			return $('.background div').width();
+		}
+
 		function showCurrent(updateHistory) {
 			if (typeof updateHistory === 'undefined') {
 				updateHistory = true;
 			}
-			$('.scroll section:not(:nth-child('+(selected+1)+')) article').fadeOut();
-			$('.scroll section:nth-child('+(selected+1)+') article').delay(showDelay).fadeIn();
+			$('.scroll article:not(:nth-child('+(selected+1)+'))').fadeOut();
+			$('.scroll article:nth-child('+(selected+1)+')').delay(showDelay).fadeIn();
 			if (updateHistory && Modernizr.history) {
-				var selectedId = $('.scroll section:nth-child('+(selected+1)+')').prop('id');
+				var selectedId = $('.scroll article:nth-child('+(selected+1)+')').prop('id');
 				window.history.pushState(null, null, '#'+selectedId);
 			}
 		}
@@ -160,7 +158,7 @@ $testVideo = '<video src="/img/vid.mp4" controls preload="none"></video>'
 				tstring = 'translateX('+distance+'px)';
 			}
 			if (Modernizr.csstransforms && Modernizr.csstransitions) {
-				$('.scroll section').css({
+				$('.background div').css({
 					'-webkit-transition-duration': dstring,
 					'-moz-transition-duration': dstring,
 					'-ms-transition-duration': dstring,
@@ -175,9 +173,9 @@ $testVideo = '<video src="/img/vid.mp4" controls preload="none"></video>'
 			} else {
 				distance *= -1;
 				if (duration === 0) {
-					$('.scroll').scrollLeft(distance);
+					$('.background').scrollLeft(distance);
 				} else {
-					$('.scroll').stop().clearQueue().animate({
+					$('.background').stop().clearQueue().animate({
 						scrollLeft: distance
 					}, duration);
 				}
@@ -186,7 +184,7 @@ $testVideo = '<video src="/img/vid.mp4" controls preload="none"></video>'
 
 		if (Modernizr.history) {
 			window.addEventListener('popstate', function(e) {
-				selected = $('.scroll section').index($(window.location.hash));
+				selected = $('.scroll article').index($(window.location.hash));
 				scrollTo(w * selected);
 				showCurrent(false);
 			});
@@ -202,7 +200,7 @@ $testVideo = '<video src="/img/vid.mp4" controls preload="none"></video>'
 		});
 
 		$(window).resize(function() {
-			w = $('.scroll section').width();
+			w = getWidth();
 			scrollTo(w * selected);
 			showCurrent();
 		});
