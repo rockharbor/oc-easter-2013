@@ -82,6 +82,9 @@
 			}
 			var dstring = Number(duration / 1000) + 's';
 			var tstring = 'translate3d('+distance+'px, 0px, 0px)';
+			if (!Modernizr.csstransforms3d) {
+				tstring = 'translateX('+distance+'px)';
+			}
 			if (Modernizr.csstransforms && Modernizr.csstransitions) {
 				$('.scroll section').css({
 					'-webkit-transition-duration': dstring,
@@ -91,8 +94,8 @@
 					'transition-duration': dstring,
 					'-webkit-transform': tstring,
 					'-moz-transform': tstring,
-					'-ms-transform': 'translateX('+distance+'px)',
-					'-o-transform': 'translateX('+distance+'px)',
+					'-ms-transform': tstring,
+					'-o-transform': tstring,
 					'transform': tstring
 				});
 			} else {
