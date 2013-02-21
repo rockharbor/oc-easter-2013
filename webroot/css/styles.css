@@ -320,18 +320,22 @@ section.fullsize:last-child {
 	margin-top: -197px; /*= videoheight/2 */
 }
 
+.testbg {
+	background-image: url('/img/bg.jpg');
+}
+
 /*= Nav
 ************************************/
 [for=show-nav] {
 	z-index: 2;
 	cursor: pointer;
 	position: absolute;
-	top: 5em;
+	display: block;
+	top: 0em;
 	left: 50%;
 	height: 5em; /*= 50px */
 	width: 10em; /*= 100px */
 	margin-left: -5em; /*= 50px */
-	margin-top: -5em; /*= -50px */
 
 	background: #8c2929;
 
@@ -346,7 +350,7 @@ section.fullsize:last-child {
 }
 
 #show-nav:checked ~ [for=show-nav] {
-	top: 30em; /*= 200px - 250 for nav menu, 50 for nav button */
+	top: 25em; /*= nav height */
 }
 
 #show-nav:checked ~ nav {
