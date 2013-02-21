@@ -82,18 +82,29 @@
 			}
 			var dstring = Number(duration / 1000) + 's';
 			var tstring = 'translate3d('+distance+'px, 0px, 0px)';
-			$('.scroll section').css({
-				'-webkit-transition-duration': dstring,
-				'-moz-transition-duration': dstring,
-				'-ms-transition-duration': dstring,
-				'-o-transition-duration': dstring,
-				'transition-duration': dstring,
-				'-webkit-transform': tstring,
-				'-moz-transform': tstring,
-				'-ms-transform': 'translateX('+distance+'px)',
-				'-o-transform': 'translateX('+distance+'px)',
-				'transform': tstring
-			});
+			if (Modernizr.csstransforms && Modernizr.csstransitions) {
+				$('.scroll section').css({
+					'-webkit-transition-duration': dstring,
+					'-moz-transition-duration': dstring,
+					'-ms-transition-duration': dstring,
+					'-o-transition-duration': dstring,
+					'transition-duration': dstring,
+					'-webkit-transform': tstring,
+					'-moz-transform': tstring,
+					'-ms-transform': 'translateX('+distance+'px)',
+					'-o-transform': 'translateX('+distance+'px)',
+					'transform': tstring
+				});
+			} else {
+				distance *= -1;
+				if (duration === 0) {
+					$('.scroll').scrollLeft(distance);
+				} else {
+					$('.scroll').stop().clearQueue().animate({
+						scrollLeft: distance
+					}, duration);
+				}
+			}
 		}
 
 		if (Modernizr.history) {
@@ -105,10 +116,12 @@
 		}
 
 		$('.scroll').scroll(function(e) {
-			// seriously #hash, we don't want you to scroll
-			e.preventDefault();
-			this.scrollLeft = 0;
-			return false;
+			if (Modernizr.csstransforms && Modernizr.csstransitions) {
+				// seriously #hash, we don't want you to scroll
+				e.preventDefault();
+				this.scrollLeft = 0;
+				return false;
+			}
 		});
 
 		// configure videos
