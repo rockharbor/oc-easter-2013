@@ -96,7 +96,9 @@ $testVideo = '<video src="/img/vid.mp4" controls preload="none"></video>'
 
 				switch (phase) {
 					case 'move':
-						$('.scroll section article').fadeOut();
+						$('video').mediaelementplayer().each(function() {
+							this.pause();
+						});
 						if (direction == 'left') {
 							scrollTo((w * selected) + distance, 0);
 						} else if (direction == 'right') {
@@ -130,6 +132,7 @@ $testVideo = '<video src="/img/vid.mp4" controls preload="none"></video>'
 			if (typeof updateHistory === 'undefined') {
 				updateHistory = true;
 			}
+			$('.scroll section:not(:nth-child('+(selected+1)+')) article').fadeOut();
 			$('.scroll section:nth-child('+(selected+1)+') article').delay(showDelay).fadeIn();
 			if (updateHistory && Modernizr.history) {
 				var selectedId = $('.scroll section:nth-child('+(selected+1)+')').prop('id');
