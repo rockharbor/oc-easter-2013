@@ -127,6 +127,12 @@
 			}
 		});
 
+		$(window).resize(function() {
+			w = $('.scroll section').width();
+			scrollTo(w * selected);
+			showCurrent();
+		});
+
 		// configure videos
 		$('video')
 			.each(function() {
