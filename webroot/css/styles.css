@@ -205,12 +205,7 @@ section.fullsize:last-child {
 
 .scroll section article {
 	position: absolute;
-}
-
-.mejs-container,
-.scroll section article video
-{
-	margin-top: -197px;
+	max-width: 100%;
 }
 
 .bg1 {
@@ -251,6 +246,78 @@ section.fullsize:last-child {
 
 .bg10 {
 	background-image: url('/img/10.jpg');
+}
+
+#story1 article {
+	width: 400px;
+
+	right: 20px;
+	top: 70px;
+}
+
+#story2 article {
+	top: 50%;
+	left: 20px;
+
+	margin-top: -197px; /*= videoheight/2 */
+}
+
+#story3 article {
+	top: 50%;
+	left: 20px;
+
+	margin-top: -197px; /*= videoheight/2 */
+}
+
+#story4 article {
+	width: 300px;
+
+	top: 100px;
+	left: 40px;
+}
+
+#story5 article {
+	top: 50%;
+	left: 20px;
+
+	margin-top: -197px; /*= videoheight/2 */
+}
+
+#story6 article {
+	top: 50%;
+	left: 50%;
+
+	margin-left: -350px; /*= videowidth/2 */
+	margin-top: -197px; /*= videoheight/2 */
+}
+
+#story7 article {
+	width: 400px;
+
+	top: 80px;
+	left: 50%;
+
+	margin-left: -200px; /*= width/2 */
+}
+
+#story8 article {
+	top: 50%;
+	left: 50%;
+
+	margin-left: -350px; /*= videowidth/2 */
+	margin-top: -197px; /*= videoheight/2 */
+}
+
+#story9 article {
+	right: 40px;
+	top: 70px;
+}
+
+#story10 article {
+	top: 50%;
+	left: 50px;
+
+	margin-top: -197px; /*= videoheight/2 */
 }
 
 /*= Nav

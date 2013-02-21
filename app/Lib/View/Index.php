@@ -43,13 +43,13 @@ $testVideo = '<video src="/img/vid.mp4" controls preload="none"></video>'
 
 	<section id="story7" class="fullsize fullbackground bg7">
 		<article>
-			<?php echo $testVideo; ?>
+			<p><?php echo $testStory; ?></p>
 		</article>
 	</section>
 
 	<section id="story8" class="fullsize fullbackground bg8">
 		<article>
-			<p><?php echo $testStory; ?></p>
+			<?php echo $testVideo; ?>
 		</article>
 	</section>
 
