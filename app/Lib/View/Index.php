@@ -112,6 +112,9 @@ $testVideo = '<video src="/img/vid.mp4" controls preload="none"></video>'
 							prev();
 						}
 						break;
+					case 'cancel':
+						scrollTo(w * selected);
+						break;
 				}
 			}
 		});
