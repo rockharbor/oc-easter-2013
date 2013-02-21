@@ -1,3 +1,71 @@
+<?php
+// for testing paragraph placement, max length ~1500 chars
+$testStory = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non porta magna. Vivamus dignissim volutpat scelerisque. Nulla convallis consectetur nisi eget bibendum. Sed semper adipiscing leo, elementum dictum metus convallis nec. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur est sapien, sagittis ac vehicula ac, laoreet vitae arcu. Quisque congue eleifend molestie. Mauris malesuada tellus ac quam venenatis pulvinar. Integer bibendum sagittis auctor. Nulla quis feugiat mauris. Vestibulum vel lectus nisi. Suspendisse vitae lacus consectetur nisl blandit pellentesque. Integer commodo odio eget quam tincidunt in vulputate lacus facilisis. Maecenas facilisis sem quis orci posuere dapibus. Vivamus quis dui est. Nunc cursus iaculis iaculis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non porta magna. Vivamus dignissim volutpat scelerisque. Nulla convallis consectetur nisi eget bibendum. Sed semper adipiscing leo, elementum dictum metus convallis nec. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur est sapien, sagittis ac vehicula ac, laoreet vitae arcu. Quisque congue eleifend molestie. Mauris malesuada tellus ac quam venenatis pulvinar. Integer bibendum sagittis auctor. Nulla quis feugiat mauris. Vestibulum vel lectus nisi. Suspendisse vitae lacus consectetur nisl blandit pellentesque. Integer commodo odio eget quam tincidunt in vulputate lacus facilisis.';
+$testVideo = '<video src="/img/vid.mp4" controls preload="none"></video>'
+?>
+<div class="scroll">
+
+	<section id="story1" class="fullsize fullbackground bg1">
+		<article>
+			<p><?php echo $testStory; ?></p>
+		</article>
+	</section>
+
+	<section id="story2" class="fullsize fullbackground bg2">
+		<article>
+			<?php echo $testVideo; ?>
+		</article>
+	</section>
+
+	<section id="story3" class="fullsize fullbackground bg3">
+		<article>
+			<?php echo $testVideo; ?>
+		</article>
+	</section>
+
+	<section id="story4" class="fullsize fullbackground bg4">
+		<article>
+			<p><?php echo $testStory; ?></p>
+		</article>
+	</section>
+
+	<section id="story5" class="fullsize fullbackground bg5">
+		<article>
+			<?php echo $testVideo; ?>
+		</article>
+	</section>
+
+	<section id="story6" class="fullsize fullbackground bg6">
+		<article>
+			<?php echo $testVideo; ?>
+		</article>
+	</section>
+
+	<section id="story7" class="fullsize fullbackground bg7">
+		<article>
+			<?php echo $testVideo; ?>
+		</article>
+	</section>
+
+	<section id="story8" class="fullsize fullbackground bg8">
+		<article>
+			<p><?php echo $testStory; ?></p>
+		</article>
+	</section>
+
+	<section id="story9" class="fullsize fullbackground bg9">
+		<article>
+			<?php echo $testVideo; ?>
+		</article>
+	</section>
+
+	<section id="story10" class="fullsize fullbackground bg10">
+		<article>
+			<?php echo $testVideo; ?>
+		</article>
+	</section>
+
+</div>
 <script>
 	$(document).ready(function() {
 		// let the js do the scrolling
@@ -138,6 +206,7 @@
 			.each(function() {
 				var w = $(this).width();
 				var h = w*9/16;
+				$(this).attr('width', w);
 				$(this).attr('height', h);
 			})
 			.mediaelementplayer({
