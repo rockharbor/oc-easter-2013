@@ -298,21 +298,13 @@ video {
 
 /*= Nav
 ************************************/
-[for=show-nav] {
+nav {
 	z-index: 2;
-	cursor: pointer;
-	position: absolute;
-	display: block;
-	top: 0em;
-	left: 50%;
-	height: 5em; /*= 50px */
-	width: 10em; /*= 100px */
-	margin-left: -5em; /*= 50px */
-
-	background: #8c2929;
-
-	text-align: center;
-	color: #fff;
+	position: fixed;
+	top: -25em; /*= -250px */
+	left: 0;
+	width: 100%;
+	height: 25em; /*= 250px */
 
 	-webkit-transition: .125s linear all;
 	-moz-transition: .125s linear all;
@@ -321,20 +313,28 @@ video {
 	transition: .125s linear all;
 }
 
-#show-nav:checked ~ [for=show-nav] {
-	top: 25em; /*= nav height */
-}
-
-#show-nav:checked ~ nav {
-	top: 0;
-}
-
-nav {
-	width: 100%;
-	height: 25em; /*= 250px */
+nav button {
+	cursor: pointer;
 	position: absolute;
-	top: -25em; /*= -250px */
-	z-index: 2;
+	display: block;
+	top: 100%;
+	left: 50%;
+	height: 5em; /*= 50px */
+	width: 10em; /*= 100px */
+	margin-left: -5em; /*= 50px */
+
+	background: #8c2929;
+
+	border: none;
+
+	text-align: center;
+	color: #fff;
+}
+
+nav > ul {
+	width: 100%;
+	height: 100%;
+	z-index: 3;
 
 	text-align: center;
 
@@ -347,12 +347,6 @@ nav {
 	-ms-transition: .125s linear all;
 	-o-transition: .125s linear all;
 	transition: .125s linear all;
-}
-
-nav > ul {
-	margin: 0 auto;
-	width: 200px;
-	margin-top: 1em;
 }
 
 nav ul li ul li a {

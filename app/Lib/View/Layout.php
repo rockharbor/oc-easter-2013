@@ -29,16 +29,20 @@
 					})
 					return false;
 				});
+				$('nav button').click(function() {
+					var top = $('nav').position().top;
+					if (top < 0) {
+						$('nav').css('top', 0);
+					} else {
+						$('nav').css('top', -$('nav').height());
+					}
+				});
 			});
 		</script>
 	</head>
 	<body>
-		<input id="show-nav" type="checkbox" role="button" class="accessibility" />
-		<label for="show-nav">
-			<span class="accessibility">Menu</span>
-			<span>&#8593;</span>
-		</label>
 		<nav>
+			<button>Menu</button>
 			<ul>
 				<li><a href="/">Home</a></li>
 				<li><a href="/pages/what-is-mark">What is <span class="mark">Mark</span>?</a></li>
