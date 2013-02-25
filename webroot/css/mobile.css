@@ -1,0 +1,52 @@
+.scroll article,
+section article
+{
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 70px;
+}
+
+#story1,
+#story2,
+#story3,
+#story4,
+#story5,
+#story6,
+#story7,
+#story8,
+#story9,
+#story10
+{
+	margin-left: auto;
+	margin-top: auto;
+	left: auto;
+	top: auto;
+}
+
+/* text stories */
+#story1,
+#story4,
+#story7
+{
+	margin-top: 70px;
+}
+
+/*= Video Player
+************************************/
+.mejs-container,
+.mejs-overlay
+{
+	background: transparent;
+	max-width: 100%;
+	width: 100% !important;
+}
+
+.mejs-container {
+	left: 0;
+	top: 60px;
+}
+
+.mejs-controls {
+	display: none;
+}

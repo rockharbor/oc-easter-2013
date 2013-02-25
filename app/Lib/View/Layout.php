@@ -7,6 +7,7 @@
 		<link rel="stylesheet" href="/css/reset.css" />
 		<link rel="stylesheet" href="/js/mediaelement/build/mediaelementplayer.min.css" />
 		<link rel="stylesheet" href="/css/styles.css" />
+		<link rel="stylesheet" href="/css/mobile.css" media="screen and (max-width: 500px)" />
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
 		<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.0/jquery-ui.min.js"></script>
 		<script src="/js/modernizr.js"></script>
