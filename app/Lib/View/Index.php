@@ -48,16 +48,17 @@ $testVideo = '<video src="/img/vid.mp4" controls preload="none"></video>'
 </div>
 
 <div class="multi background">
-	<div class="bg1"></div>
-	<div class="bg2"></div>
-	<div class="bg3"></div>
-	<div class="bg4"></div>
-	<div class="bg5"></div>
-	<div class="bg6"></div>
-	<div class="bg7"></div>
-	<div class="bg8"></div>
-	<div class="bg9"></div>
-	<div class="bg10"></div>
+<div
+	class="bg1"></div><div
+	class="bg2"></div><div
+	class="bg3"></div><div
+	class="bg4"></div><div
+	class="bg5"></div><div
+	class="bg6"></div><div
+	class="bg7"></div><div
+	class="bg8"></div><div
+	class="bg9"></div><div
+	class="bg10"></div>
 </div>
 
 <script>

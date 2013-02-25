@@ -443,7 +443,7 @@ img.small {
 	display: inline !ie7;
 	display: inline-block;
 	zoom: 1;
-	height: 100%;
+	height: 101%;
 	width: 96%; /* let the next image bleed onto the screen */
 	margin-left: -2px; /* handle pixel fractions due to percentage width */
 }
