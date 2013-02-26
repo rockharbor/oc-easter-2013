@@ -74,4 +74,6 @@ section article
 
 .mejs-mediaelement video {
 	display: inline-block;
+	width: 100% !important;
+	height: 200px !important;
 }
