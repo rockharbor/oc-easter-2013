@@ -47,6 +47,18 @@ $testVideo = '<video src="/img/vid.mp4" controls preload="none"></video>';
 
 </div>
 
+<?php
+$message = rawurlencode('OC Easter 2013 ');
+$page = rawurlencode('http://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'].'#story1');
+$title = rawurlencode('OC Easter 2013');
+?>
+<div class="buttons">
+	<a href="http://twitter.com/home?status=<?php echo $message.$page; ?>" target="_blank" class="twitter">Twitter</a>
+	<a href="http://www.facebook.com/sharer.php?u=<?php echo $page; ?>&t=<?php echo $title; ?>" target="_blank" class="facebook">Facebook</a>
+</div>
+<?php
+?>
+
 <div class="multi background">
 <div
 	class="bg1"></div><div
@@ -223,5 +235,14 @@ $testVideo = '<video src="/img/vid.mp4" controls preload="none"></video>';
 					}
 				}
 			});
+
+		// configure share buttons
+		jQuery('.buttons a').click(function() {
+			var selectedId = $('.scroll article:nth-child('+(selected+1)+')').prop('id');
+			// replace #storyX with current url fragment
+			this.href = this.href.replace(/%23([a-z]+\d)/, '%23'+selectedId);
+			window.open(jQuery(this).attr('href'), 'share', 'width=500,height=400');
+			return false;
+		});
 	});
 </script>
