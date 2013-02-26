@@ -100,8 +100,8 @@ img {
 }
 
 video {
-	width: 700px;
-	height: 394px; /*= 16:9 */
+	max-width: 700px;
+	max-height: 394px; /*= 16:9 */
 }
 
 .twitter {

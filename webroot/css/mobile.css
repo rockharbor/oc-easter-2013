@@ -55,6 +55,9 @@ section article
 .mejs-container,
 .mejs-overlay
 {
+	max-width: 100%;
+	max-height: 100%;
+
 	background: transparent;
 	max-width: 100%;
 	width: 100% !important;
@@ -62,4 +65,13 @@ section article
 
 .mejs-container .mejs-controls {
 	visibility: hidden;
+}
+
+.mejs-mediaelement {
+	text-align: center;
+	margin: 0 auto;
+}
+
+.mejs-mediaelement video {
+	display: inline-block;
 }

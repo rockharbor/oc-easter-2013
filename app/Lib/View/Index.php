@@ -1,7 +1,7 @@
 <?php
 // for testing paragraph placement, max length ~1500 chars
 $testStory = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non porta magna. Vivamus dignissim volutpat scelerisque. Nulla convallis consectetur nisi eget bibendum. Sed semper adipiscing leo, elementum dictum metus convallis nec. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur est sapien, sagittis ac vehicula ac, laoreet vitae arcu. Quisque congue eleifend molestie. Mauris malesuada tellus ac quam venenatis pulvinar. Integer bibendum sagittis auctor. Nulla quis feugiat mauris. Vestibulum vel lectus nisi. Suspendisse vitae lacus consectetur nisl blandit pellentesque. Integer commodo odio eget quam tincidunt in vulputate lacus facilisis. Maecenas facilisis sem quis orci posuere dapibus. Vivamus quis dui est. Nunc cursus iaculis iaculis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non porta magna. Vivamus dignissim volutpat scelerisque. Nulla convallis consectetur nisi eget bibendum. Sed semper adipiscing leo, elementum dictum metus convallis nec. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur est sapien, sagittis ac vehicula ac, laoreet vitae arcu. Quisque congue eleifend molestie. Mauris malesuada tellus ac quam venenatis pulvinar. Integer bibendum sagittis auctor. Nulla quis feugiat mauris. Vestibulum vel lectus nisi. Suspendisse vitae lacus consectetur nisl blandit pellentesque. Integer commodo odio eget quam tincidunt in vulputate lacus facilisis.';
-$testVideo = '<video src="/img/vid.mp4" controls preload="none"></video>';
+$testVideo = '<video src="/img/vid.mp4" controls preload="none" width="700px"></video>';
 ?>
 <section class="scroll">
 
@@ -93,10 +93,6 @@ $pagetitle = rawurlencode('OC Easter 2013');
 		if (Modernizr.history && $(hash).length > 0) {
 			selected = $('.scroll article').index($(hash));
 		}
-
-		// initialize slide, and update history if this isn't the first
-		scrollTo(w * selected);
-		showCurrent(selected === 0);
 
 		$('.scroll').swipe({
 			triggerOnTouchEnd : true,
@@ -256,6 +252,10 @@ $pagetitle = rawurlencode('OC Easter 2013');
 					}
 				}
 			});
+
+		// initialize slide, and update history if this isn't the first
+		scrollTo(w * selected);
+		showCurrent(selected === 0);
 
 		// configure share buttons
 		jQuery('.buttons a').click(function() {
