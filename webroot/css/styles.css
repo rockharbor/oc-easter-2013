@@ -364,11 +364,11 @@ nav button {
 	width: 10em; /*= 100px */
 	margin-left: -5em; /*= 50px */
 
-	background: #8c2929;
+	background: url('/img/down.png') no-repeat 50% 50% #8c2929;
 
 	border: none;
 
-	text-align: center;
+	text-indent: -9999px;
 	color: #fff;
 }
 

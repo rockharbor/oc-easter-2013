@@ -34,8 +34,24 @@
 					var top = $('nav').position().top;
 					if (top < 0) {
 						$('nav').css('top', 0);
+						var tstring = 'rotate(180deg)';
+						$('nav button').css({
+							'-webkit-transform': tstring,
+							'-moz-transform': tstring,
+							'-ms-transform': tstring,
+							'-o-transform': tstring,
+							'transform': tstring
+						});
 					} else {
 						$('nav').css('top', -$('nav').height());
+						var tstring = 'rotate(0deg)';
+						$('nav button').css({
+							'-webkit-transform': tstring,
+							'-moz-transform': tstring,
+							'-ms-transform': tstring,
+							'-o-transform': tstring,
+							'transform': tstring
+						});
 					}
 				});
 			});
