@@ -140,7 +140,7 @@ $pagetitle = rawurlencode('OC Easter 2013');
 		$('.navigate button.prev').click(prev);
 
 		function getWidth() {
-			return $('.background div').width();
+			return $('.background div:first-child').width();
 		}
 
 		function showCurrent(updateHistory) {
