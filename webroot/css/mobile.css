@@ -1,7 +1,7 @@
 .scroll article,
 section article
 {
-	position: absolute;
+	position: relative;
 	width: 100%;
 	left: 0;
 	top: 70px;
@@ -35,6 +35,21 @@ section article
 	left: 0;
 }
 
+/* video stories */
+#story2,
+#story3,
+#story5,
+#story6,
+#story8,
+#story9,
+#story10
+{
+	position: absolute;
+	top: 70px;
+	width: 100%;
+	height: 200px;
+}
+
 /*= Video Player
 ************************************/
 .mejs-container,
@@ -45,20 +60,7 @@ section article
 	width: 100% !important;
 }
 
-.mejs-overlay-button {
-	position: fixed;
-	top: 50%;
-	left: 50%;
-	margin-top: -50px;
-	margin-left: -50px;
-}
 
-.mejs-container {
-	left: 0;
-	top: 60px;
-}
-
-.mejs-mediaelement,
 .mejs-controls {
 	visibility: none;
 }
