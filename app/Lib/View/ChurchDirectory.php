@@ -223,6 +223,6 @@ Sundays | 9am &amp; 10:45am
 </section>
 
 <div class="background">
-	<div class="bg1" />
+	<div class="bg18" />
 </div>
 

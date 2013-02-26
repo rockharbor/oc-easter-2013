@@ -47,7 +47,7 @@
 			<ul>
 				<li><a href="/">Home</a></li>
 				<li><a href="/pages/what-is-heaven-crashing-in">What is <span class="hic">Heaven Crashing In</span>?</a></li>
-				<li><a href="/victory/view">Share a <span class="mark">Mark</span> Story</a></li>
+				<li><a href="/victory/view">Share a <span class="hic">Heaven Crashing In</span> Story</a></li>
 				<li>
 					<a href="/pages/easter-celebration">Easter Celebration</a>
 					<ul>

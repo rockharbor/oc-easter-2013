@@ -258,46 +258,6 @@ h1 .hic {
 	z-index: 1;
 }
 
-.bg1 {
-	background-image: url('/img/1.jpg');
-}
-
-.bg2 {
-	background-image: url('/img/2.jpg');
-}
-
-.bg3 {
-	background-image: url('/img/3.jpg');
-}
-
-.bg4 {
-	background-image: url('/img/4.jpg');
-}
-
-.bg5 {
-	background-image: url('/img/5.jpg');
-}
-
-.bg6 {
-	background-image: url('/img/6.jpg');
-}
-
-.bg7 {
-	background-image: url('/img/7.jpg');
-}
-
-.bg8 {
-	background-image: url('/img/8.jpg');
-}
-
-.bg9 {
-	background-image: url('/img/9.jpg');
-}
-
-.bg10 {
-	background-image: url('/img/10.jpg');
-}
-
 #story1 {
 	display: block;
 	width: 400px;
@@ -371,10 +331,6 @@ h1 .hic {
 	left: 50px;
 
 	margin-top: -197px; /*= videoheight/2 */
-}
-
-.testbg {
-	background-image: url('/img/bg.jpg');
 }
 
 /*= Nav
@@ -559,6 +515,81 @@ img.small {
 
 .church p {
 	background: transparent;
+}
+
+
+/*= Backgrounds
+************************************/
+.bg1 {
+	background-image: url('/img/1.jpg');
+}
+
+.bg2 {
+	background-image: url('/img/2.jpg');
+}
+
+.bg3 {
+	background-image: url('/img/3.jpg');
+}
+
+.bg4 {
+	background-image: url('/img/4.jpg');
+}
+
+.bg5 {
+	background-image: url('/img/5.jpg');
+}
+
+.bg6 {
+	background-image: url('/img/6.jpg');
+}
+
+.bg7 {
+	background-image: url('/img/7.jpg');
+}
+
+.bg8 {
+	background-image: url('/img/8.jpg');
+}
+
+.bg9 {
+	background-image: url('/img/9.jpg');
+}
+
+.bg10 {
+	background-image: url('/img/10.jpg');
+}
+
+.bg11 {
+	background-image: url('/img/11.jpg');
+}
+
+.bg12 {
+	background-image: url('/img/12.jpg');
+}
+
+.bg13 {
+	background-image: url('/img/13.jpg');
+}
+
+.bg14 {
+	background-image: url('/img/14.jpg');
+}
+
+.bg15 {
+	background-image: url('/img/15.jpg');
+}
+
+.bg16 {
+	background-image: url('/img/16.jpg');
+}
+
+.bg17 {
+	background-image: url('/img/17.jpg');
+}
+
+.bg18 {
+	background-image: url('/img/18.jpg');
 }
 
 /*= Video Player
