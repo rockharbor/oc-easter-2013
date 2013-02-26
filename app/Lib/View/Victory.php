@@ -13,3 +13,7 @@
 		<?php endif; ?>
 	</article>
 </section>
+
+<div class="background">
+	<div class="bg19" />
+</div>

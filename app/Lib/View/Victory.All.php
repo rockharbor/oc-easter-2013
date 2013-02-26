@@ -15,6 +15,11 @@
 </section>
 <div class="content auto upload-slide">
 </div>
+
+<div class="background">
+	<div class="bg19" />
+</div>
+
 <script>
 	(function($) {
 		var el = $('.upload-slide');
