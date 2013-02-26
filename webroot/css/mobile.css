@@ -5,6 +5,7 @@ section article
 	width: 100%;
 	left: 0;
 	top: 70px;
+	overflow: hidden;
 }
 
 #story1,
@@ -29,7 +30,9 @@ section article
 #story4,
 #story7
 {
-	margin-top: 70px;
+	width: 100%;
+	top: 70px;
+	left: 0;
 }
 
 /*= Video Player
