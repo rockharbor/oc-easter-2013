@@ -51,7 +51,7 @@ class Page {
 		}
 
 		if (!isset($this->_vars['title'])) {
-			$this->_vars['title'] = $view;
+			$this->_vars['title'] = implode(' ', $viewParts);
 		}
 
 		$viewPath = LIB . DS . 'View' . DS;
