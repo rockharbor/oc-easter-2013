@@ -60,7 +60,6 @@ section article
 	width: 100% !important;
 }
 
-
-.mejs-controls {
-	visibility: none;
+.mejs-container .mejs-controls {
+	visibility: hidden;
 }
