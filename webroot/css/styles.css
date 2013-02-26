@@ -219,6 +219,21 @@ video {
 	display: block;
 }
 
+.hic {
+	display: inline-block;
+	width: 12px;
+
+	background: url('/img/mark-small.png') no-repeat 50% 50%;
+
+	text-indent: -9999px;
+}
+
+h1 .hic {
+	width: 24px;
+	
+	background-image: url('/img/mark-small-h1.png');
+}
+
 /*= Scroll
 ************************************/
 .content section.scroll {
