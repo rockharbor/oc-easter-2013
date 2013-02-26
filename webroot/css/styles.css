@@ -68,11 +68,30 @@ p {
 	background: rgba(0, 0, 0, .4);
 }
 
-h1 {
+a {
+	color: rgb(140, 41, 41);
+}
+
+h1,
+h2,
+h3
+{
+	margin: 10px 0;
+
 	font-family: plutosans, Helvetica, Arial, sans-serif;
 	font-size: 2.4em; /*= 24px */
 	font-weight: normal;
 	text-shadow: -2px -2px 3px rgba(0, 0, 0, .4);
+
+	color: #fff;
+}
+
+h2 {
+	font-size: 2.2em; /*= 22px */
+}
+
+h3 {
+	font-size: 2.0em; /*= 20px */
 }
 
 img {
@@ -124,7 +143,7 @@ video {
 }
 
 .content section {
-	margin-top: 7em; /*= 50 for nav + 20 margin */
+	margin-top: 10em; /*= 50 for nav + 20 margin */
 }
 
 .button {
@@ -494,6 +513,26 @@ img.small {
 	width: 101%;
 }
 
+.directory-column {
+	width: 46%;
+	padding: 0 2%;
+	float: left;
+}
+
+.church {
+	padding: 7px;
+	margin: 30px 0;
+
+	background: #000;
+	background: rgba(0, 0, 0, .4);
+}
+
+.church p {
+	background: transparent;
+}
+
+/*= Video Player
+************************************/
 .mejs-controls .mejs-time-rail .mejs-time-loaded {
 	background: #8c2929;
 	background: rgba(140, 41, 41, 0.8);
