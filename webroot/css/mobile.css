@@ -45,11 +45,20 @@ section article
 	width: 100% !important;
 }
 
+.mejs-overlay-button {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-top: -50px;
+	margin-left: -50px;
+}
+
 .mejs-container {
 	left: 0;
 	top: 60px;
 }
 
+.mejs-mediaelement,
 .mejs-controls {
-	display: none;
+	visibility: none;
 }
