@@ -56,8 +56,11 @@ $pagetitle = rawurlencode('OC Easter 2013');
 	<a href="http://twitter.com/home?status=<?php echo $message.$page; ?>" target="_blank" class="twitter">Twitter</a>
 	<a href="http://www.facebook.com/sharer.php?u=<?php echo $page; ?>&t=<?php echo $pagetitle; ?>" target="_blank" class="facebook">Facebook</a>
 </div>
-<?php
-?>
+
+<div class="navigate">
+	<button class="prev">Prev</button>
+	<button class="next">Next</button>
+</div>
 
 <div class="multi background">
 <div
@@ -131,12 +134,14 @@ $pagetitle = rawurlencode('OC Easter 2013');
 			scrollTo(w * selected);
 			showCurrent();
 		}
+		$('.navigate button.next').click(next);
 
 		function prev() {
 			selected = Math.max(selected-1, 0);
 			scrollTo(w * selected);
 			showCurrent();
 		}
+		$('.navigate button.prev').click(prev);
 
 		function getWidth() {
 			return $('.background div').width();
@@ -151,6 +156,13 @@ $pagetitle = rawurlencode('OC Easter 2013');
 			if (updateHistory && Modernizr.history) {
 				var selectedId = $('.scroll article:nth-child('+(selected+1)+')').prop('id');
 				window.history.pushState(null, null, '#'+selectedId);
+			}
+
+			$('.navigate button:hidden').show();
+			if (selected === 0) {
+				$('.navigate button.prev').hide();
+			} else if (selected === total-1) {
+				$('.navigate button.next').hide();
 			}
 		}
 

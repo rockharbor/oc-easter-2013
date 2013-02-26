@@ -230,7 +230,7 @@ video {
 
 h1 .hic {
 	width: 24px;
-	
+
 	background-image: url('/img/mark-small-h1.png');
 }
 
@@ -256,6 +256,40 @@ h1 .hic {
 	bottom: 10px;
 
 	z-index: 1;
+}
+
+.navigate {
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+
+	z-index: 1;
+}
+
+.navigate button {
+	cursor: pointer;
+	display: inline-block;
+	padding: 5px;
+	width: 40px;
+	height: 40px;
+
+	border: none;
+
+	text-indent: -9999px;
+	color: #fff;
+
+	background: rgb(140, 41, 41);
+	background: rgba(140, 41, 41, .6);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+.navigate .next {
+	background-image: url('/img/right.png');
+}
+
+.navigate .prev {
+	background-image: url('/img/left.png');
 }
 
 #story1 {
