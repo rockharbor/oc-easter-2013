@@ -251,7 +251,7 @@ h1 .hic {
 }
 
 .buttons {
-	position: fixed;
+	position: absolute;
 	left: 10px;
 	bottom: 10px;
 
@@ -259,7 +259,7 @@ h1 .hic {
 }
 
 .navigate {
-	position: fixed;
+	position: absolute;
 	right: 10px;
 	bottom: 10px;
 

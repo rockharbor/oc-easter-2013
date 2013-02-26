@@ -215,6 +215,15 @@ $pagetitle = rawurlencode('OC Easter 2013');
 			});
 		}
 
+		$(window).scroll(function() {
+			if ($(window).scrollTop() > 0) {
+				$('.navigate, .buttons').hide();
+			} else {
+				$('.navigate, .buttons').show();
+			}
+		});
+		$(window).scrollTop(0);
+
 		$('.scroll').scroll(function(e) {
 			if (Modernizr.csstransforms && Modernizr.csstransitions) {
 				// seriously #hash, we don't want you to scroll
