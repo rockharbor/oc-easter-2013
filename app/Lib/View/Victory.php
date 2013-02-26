@@ -1,5 +1,5 @@
 <section>
-	<article class="clearfix``">
+	<article class="clearfix">
 		<?php
 		if (isset($error)): ?>
 		<p class="error"><?php echo $error; ?></p>
