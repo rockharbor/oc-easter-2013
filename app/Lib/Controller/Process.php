@@ -3,6 +3,7 @@
 class Process extends Upload {
 
 	public function GET($matches) {
+		$this->set('title', 'Share A Story');
 		$filename = $this->processStorePath . DS . $matches[1];
 		if (!file_exists($filename)) {
 			$this->redirect('/victory/upload');
@@ -13,6 +14,7 @@ class Process extends Upload {
 	}
 
 	public function POST($matches) {
+		$this->set('title', 'Share A Story');
 		$filename = $this->processStorePath . DS . $matches[1];
 		if (!file_exists($filename)) {
 			$this->redirect('/victory/upload');

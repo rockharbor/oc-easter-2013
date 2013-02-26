@@ -21,11 +21,12 @@ class Upload extends Page {
 	}
 
 	public function GET() {
-		$this->set('title', 'Upload');
+		$this->set('title', 'Share A Story');
 		$this->render('Upload');
 	}
 
 	public function POST() {
+		$this->set('title', 'Share A Story');
 		$success = false;
 		if (!$this->validate($_FILES)) {
 			$this->set('error', $this->error);

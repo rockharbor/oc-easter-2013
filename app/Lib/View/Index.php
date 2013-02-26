@@ -50,11 +50,11 @@ $testVideo = '<video src="/img/vid.mp4" controls preload="none"></video>';
 <?php
 $message = rawurlencode('OC Easter 2013 ');
 $page = rawurlencode('http://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'].'#story1');
-$title = rawurlencode('OC Easter 2013');
+$pagetitle = rawurlencode('OC Easter 2013');
 ?>
 <div class="buttons">
 	<a href="http://twitter.com/home?status=<?php echo $message.$page; ?>" target="_blank" class="twitter">Twitter</a>
-	<a href="http://www.facebook.com/sharer.php?u=<?php echo $page; ?>&t=<?php echo $title; ?>" target="_blank" class="facebook">Facebook</a>
+	<a href="http://www.facebook.com/sharer.php?u=<?php echo $page; ?>&t=<?php echo $pagetitle; ?>" target="_blank" class="facebook">Facebook</a>
 </div>
 <?php
 ?>
