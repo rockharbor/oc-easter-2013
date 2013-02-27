@@ -1,5 +1,8 @@
 <section>
 	<article>
+		<p>Do you have a story of heaven crashing into the world?</p>
+		<p>Claim victory and share a post below.</p>
+		<p>[All stories are moderated and could take a few hours before being published.]</p>
 		<p>
 			<a class="upload-slide-up button" href="/victory/upload">Share Your Victory</a>
 		</p>
