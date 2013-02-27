@@ -13,6 +13,7 @@
 		<script src="/js/modernizr.js"></script>
 		<script src="/js/form/jquery.form.js"></script>
 		<script src="/js/touchswipe/jquery.touchSwipe.min.js"></script>
+		<script src="/js/lazyload/jquery.lazyload.min.js"></script>
 		<script src="/js/mediaelement/build/mediaelement-and-player.min.js"></script>
 		<script>
 			$(document).ready(function() {

@@ -10,3 +10,6 @@
 [submodule "webroot/js/mediaelement"]
 	path = webroot/js/mediaelement
 	url = https://github.com/johndyer/mediaelement.git
+[submodule "webroot/js/lazyload"]
+	path = webroot/js/lazyload
+	url = https://github.com/tuupola/jquery_lazyload

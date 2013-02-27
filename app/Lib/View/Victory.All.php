@@ -6,7 +6,7 @@
 		<div class="clearfix">
 			<?php foreach ($results as $result): ?>
 			<div class="image-container">
-				<img src="/uploads/<?php echo $result->filename; ?>" />
+				<img src="/img/grey.png" data-original="/uploads/<?php echo $result->filename; ?>" />
 				<?php if (!empty($result->note)): ?>
 				<p><?php echo $result->note; ?></p>
 				<?php endif; ?>
@@ -24,6 +24,8 @@
 
 <script>
 	(function($) {
+		$('.image-container img').lazyload();
+
 		var el = $('.upload-slide');
 		// set up slide
 		el.hide().css({
