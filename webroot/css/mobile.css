@@ -96,3 +96,10 @@ section article {
 	width: 100% !important;
 	height: 200px !important;
 }
+
+/*= Gallery
+************************************/
+.slideshow img {
+	min-width: 49%;
+	max-width: 49%;
+}
