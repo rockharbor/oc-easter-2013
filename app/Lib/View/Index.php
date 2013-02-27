@@ -229,11 +229,6 @@ $pagetitle = rawurlencode('OC Easter 2013');
 			}
 		});
 
-		$(window).resize(function() {
-			w = getWidth();
-			scrollTo(w * selected);
-			showCurrent();
-		});
 
 		// configure videos
 		$('video')
