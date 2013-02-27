@@ -13,12 +13,17 @@ if (isset($error)) {
 <script>
 	// make it one-click
 	$('#uploadForm').submit(function(e) {
+		var form = $(this);
+		$('.upload span').html('Uploading');
 		e.preventDefault();
-		var form = $(this).ajaxSubmit({
+		form.ajaxSubmit({
 			dataType: 'html',
 			resetForm: true,
 			success: function(response) {
 				$('#uploadForm').closest('.content').html(response);
+			},
+			complete: function() {
+				$('.upload span').html('Upload');
 			}
 		});
 		return false;
@@ -26,7 +31,7 @@ if (isset($error)) {
 	$('.upload')
 		.addClass('button js')
 		.children('form')
-			.before('<span>'+$('#uploadForm').find(':submit').val()+'</span>')
+			.before('<span>Upload</span>')
 	$('#uploadForm :file').change(function() {
 		$('#uploadForm').submit();
 	});
