@@ -42,6 +42,7 @@
 							'-o-transform': tstring,
 							'transform': tstring
 						});
+						$('video, .mjes-container').hide();
 					} else {
 						$('nav').css('top', -$('nav').height());
 						var tstring = 'rotate(0deg)';
@@ -52,6 +53,9 @@
 							'-o-transform': tstring,
 							'transform': tstring
 						});
+						// hide visible videos
+						// see: http://stackoverflow.com/questions/3007797/ipad-iphone-html5-video-loading
+						$('video, .mjes-container').show();
 					}
 				});
 			});
