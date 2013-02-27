@@ -46,23 +46,38 @@ class Upload extends Page {
 
 		// get dimensions and crop points
 		list($cropWidth, $cropHeight) = array(300, 300);
-		list($width, $height) = getimagesize($files['file']['tmp_name']);
+		list($origWidth, $origHeight) = getimagesize($files['file']['tmp_name']);
+
+		$aspectRatio = $origWidth / $origHeight;
+		if ($aspectRatio > 1) {
+			// landscape
+			$height = 300;
+			$width = $height * $aspectRatio;
+		} else {
+			// portrait
+			$width = 300;
+			$height = $width / $aspectRatio;
+		}
+
 		$centerX = round($width / 2);
 		$centerY = round($height / 2);
 		$x1 = max(0, $centerX - round($cropWidth / 2));
 		$y1 = max(0, $centerY - round($cropHeight / 2));
 
-		// get image
+		$resized = imagecreatetruecolor($width, $height);
+
+		// get image and resize
 		$image = call_user_func("imagecreatefrom$ext", $files['file']['tmp_name']);
 		imagealphablending($image, true);
 		imagesavealpha($image, true);
+		imagecopyresized($resized, $image, 0, 0, 0, 0, $width, $height, $origWidth, $origHeight);
 
 		// create thumbnail
 		$thumb = imagecreatetruecolor($cropWidth, $cropHeight);
 		imagesavealpha($thumb, true);
 
 		// copy the uploaded image onto the new cropped one at the crop points
-		imagecopy($thumb, $image, 0, 0, $x1, $y1, $cropWidth, $cropHeight);
+		imagecopy($thumb, $resized, 0, 0, $x1, $y1, $cropWidth, $cropHeight);
 
 		// fill the rest with transparency
 		$transparent = imagecolorallocatealpha($thumb, 0, 0, 0, 127);
