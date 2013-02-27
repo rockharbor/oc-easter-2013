@@ -12,13 +12,17 @@
 				<input type="submit" value="Upload" />
 			</form>
 		</div>
+		<div class="loading" style="display: none">
+			<img src="/img/loading.gif" />
+		</div>
 	</article>
 </section>
 <script>
 	// make it one-click
 	$('#uploadForm').submit(function(e) {
 		var form = $(this);
-		$('.upload span').html('Uploading');
+		$('.upload').hide();
+		$('.loading').show();
 		e.preventDefault();
 		form.ajaxSubmit({
 			dataType: 'html',
@@ -27,7 +31,8 @@
 				$('#uploadForm').closest('.content').html(response);
 			},
 			complete: function() {
-				$('.upload span').html('Upload');
+				$('.loading').hide();
+				$('.upload').show();
 			}
 		});
 		return false;

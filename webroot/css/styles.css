@@ -448,13 +448,17 @@ nav ul li ul {
 	left: 0;
 	width: 100%;
 	padding: 50px;
-	z-index: 1;
+	z-index: 2;
 
 	box-shadow: inset 0 0 5px 5px rgba(136, 136, 136, .2);
 
 	background: #fff;
 
 	text-align: center;
+}
+
+.upload-slide section {
+	margin-top: 0;
 }
 
 .upload-slide h1 {
@@ -509,7 +513,7 @@ img.small {
 	height: 100%;
 	display: block;
 
-	z-index: 0;
+	z-index: -1;
 
 	white-space: nowrap;
 }
