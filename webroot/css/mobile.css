@@ -9,11 +9,12 @@ section article
 }
 
 section article {
-	margin-bottom: 20px;
+	padding-bottom: 20px;
 }
 
 .content section {
-	margin-top: 7em;
+	margin-top: 0;
+	padding-top: 7em;
 }
 
 #story1,
