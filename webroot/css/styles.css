@@ -457,10 +457,17 @@ nav ul li ul {
 	text-align: center;
 }
 
-.upload-slide .user-image {
+.upload-slide h1 {
+	color: #000;
+}
+
+.user-image {
 	width: 300px;
 	height: 300px;
 	margin: 0 auto;
+
+	/* important! if center, positioning the mark is off */
+	text-align: left;
 }
 
 /*= Upload Form

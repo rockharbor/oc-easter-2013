@@ -1,15 +1,19 @@
-<h1>Upload</h1>
-<?php
-if (isset($error)) {
-	echo '<p class="error">'.$error.'</p>';
-}
-?>
-<div class="upload">
-	<form id="uploadForm" method="post" action="/victory/upload" enctype="multipart/form-data">
-		<input type="file" name="file" />
-		<input type="submit" value="Upload" />
-	</form>
-</div>
+<section>
+	<article>
+		<h1>Upload</h1>
+		<?php
+		if (isset($error)) {
+			echo '<p class="error">'.$error.'</p>';
+		}
+		?>
+		<div class="upload">
+			<form id="uploadForm" method="post" action="/victory/upload" enctype="multipart/form-data">
+				<input type="file" name="file" />
+				<input type="submit" value="Upload" />
+			</form>
+		</div>
+	</article>
+</section>
 <script>
 	// make it one-click
 	$('#uploadForm').submit(function(e) {
