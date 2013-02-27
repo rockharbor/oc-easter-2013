@@ -147,8 +147,8 @@ $pagetitle = rawurlencode('OC Easter 2013');
 			if (typeof updateHistory === 'undefined') {
 				updateHistory = true;
 			}
-			$('.scroll article:not(:nth-child('+(selected+1)+'))').fadeOut();
-			$('.scroll article:nth-child('+(selected+1)+')').delay(showDelay).fadeIn();
+			$('.scroll article:not(:nth-child('+(selected+1)+'))').hide();
+			$('.scroll article:nth-child('+(selected+1)+'):hidden').show();
 			if (updateHistory && Modernizr.history) {
 				var selectedId = $('.scroll article:nth-child('+(selected+1)+')').prop('id');
 				window.history.pushState(null, null, '#'+selectedId);
