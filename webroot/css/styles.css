@@ -371,7 +371,7 @@ h1 .hic {
 /*= Nav
 ************************************/
 nav {
-	z-index: 2;
+	z-index: 3;
 	position: fixed;
 	top: -32em; /*= -320px */
 	left: 0;
