@@ -80,8 +80,7 @@ class Db {
 		return $count;
 	}
 
-	public function findAll($page = false) {
-		$limit = 20;
+	public function findAll($page = false, $limit = 20) {
 		if ($page === false) {
 			$page = 1;
 		}

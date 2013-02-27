@@ -13,13 +13,13 @@ class Admin extends Upload {
 
 		// pagination
 		$page = 1;
-		$limit = 20;
+		$limit = 5;
 		if (isset($matches[1])) {
 			$page = $matches[1];
 		}
 		$maxpages = ceil($count / $limit);
 
-		$results = $db->findAll($page);
+		$results = $db->findAll($page, $limit);
 
 		$this->set(compact('results', 'count', 'page', 'limit', 'maxpages'));
 		$this->render('Admin');
