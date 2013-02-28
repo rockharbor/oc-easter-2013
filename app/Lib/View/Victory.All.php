@@ -1,12 +1,13 @@
 <section>
 	<article>
+		<h1>Share your <span class="hic">Heaven Crashing In</span> Story</h1>
 		<p>Do you have a story of heaven crashing into the world?</p>
 		<p>Claim victory and share a post below.</p>
 		<p>[All stories are moderated and could take a few hours before being published.]</p>
 		<p>
 			<a class="upload-slide-up button" href="/victory/upload">Share Your Victory</a>
 		</p>
-		<div class="clearfix">
+		<div class="clearfix" style="padding-top: 10px">
 			<?php foreach ($results as $result): ?>
 			<div class="image-container">
 				<img src="/img/grey.png" data-original="/uploads/<?php echo $result->filename; ?>" />

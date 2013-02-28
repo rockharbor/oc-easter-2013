@@ -27,9 +27,9 @@
 		<div class="slideshow-large" style="display: none">
 			<div class="slideshow-large-image">
 				<div class="slideshow-popup">
-					<a class="button close" href="#">X</a>
-					<a class="button next" href="#">Next &gt;</a>
-					<a class="button prev" href="#">&lt; Prev</a>
+					<a class="button close" href="#">&times;</a>
+					<a class="button next" href="#">Next</a>
+					<a class="button prev" href="#">Prev</a>
 				</div>
 				<div class="slideshow-background"></div>
 			</div>

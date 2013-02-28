@@ -13,8 +13,8 @@ section article {
 }
 
 .content section {
-	margin-top: 0;
-	padding-top: 7em;
+	margin-top: 6em;
+	padding-top: 0em;
 }
 
 #story1,
@@ -62,7 +62,8 @@ section article {
 /*= Upload
 ************************************/
 .upload-slide {
-	padding: 5px;
+	width: 90%;
+	padding: 5px 5%;
 }
 
 .upload-slide section {

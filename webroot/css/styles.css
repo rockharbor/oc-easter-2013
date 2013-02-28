@@ -60,10 +60,10 @@ a
 
 p {
 	max-width: 100%;
-	padding: 5px;
+	padding: 10px;
 
 	background: #000;
-	background: rgba(0, 0, 0, .4);
+	background: rgba(0, 0, 0, .8);
 
 	font-size: 1.4em; /*= 14px */
 	line-height: 1.5em; /*= 15px */
@@ -80,7 +80,7 @@ h3
 	margin: 10px 0;
 
 	font-family: plutosans, Helvetica, Arial, sans-serif;
-	font-size: 2.4em; /*= 24px */
+	font-size: 3em; /*= 30px */
 	font-weight: normal;
 	text-shadow: -2px -2px 3px rgba(0, 0, 0, .4);
 
@@ -92,7 +92,7 @@ h2 {
 }
 
 h3 {
-	font-size: 2.0em; /*= 20px */
+	font-size: 1.6em; /*= 16px */
 }
 
 img {
@@ -272,8 +272,8 @@ h1 .hic {
 	cursor: pointer;
 	display: inline-block;
 	padding: 5px;
-	width: 40px;
-	height: 40px;
+	width: 50px;
+	height: 50px;
 
 	border: none;
 
@@ -447,8 +447,8 @@ nav ul li ul {
 	position: fixed;
 	bottom: 100%;
 	left: 0;
-	width: 100%;
-	padding: 50px;
+	width: 90%;
+	padding: 50px 5%;
 	z-index: 2;
 
 	box-shadow: inset 0 0 5px 5px rgba(136, 136, 136, .2);
@@ -557,13 +557,24 @@ img.small {
 .church {
 	padding: 7px;
 	margin: 30px 0;
-
-	background: #000;
-	background: rgba(0, 0, 0, .4);
+	margin-top: 0;
+	text-align: left;
 }
 
 .church p {
+	padding-left: 0;
 	background: transparent;
+	padding-bottom: 0;
+}
+
+.church h3 {
+	margin-bottom: 0;
+}
+
+.church a {
+	color: #fff;
+
+	text-decoration: underline;
 }
 
 
@@ -726,26 +737,27 @@ img.small {
 	display: block;
 	position: absolute;
 	overflow: hidden;
-	padding: 10px;
+	padding: 15px;
 }
 
 .slideshow-popup a.close {
-	right: -5px;
-	top: -5px;
+	right: 0px;
+	top: 0px;
 	width: 20px;
 	height: 20px;
 
 	text-align: center;
 	line-height: 20px;
+	font-size: 20px;
 }
 
 .slideshow-popup a.next {
-	right: -10px;
+	right: 0px;
 	top: 50%;
 }
 
 .slideshow-popup a.prev {
-	left: -10px;
+	left: 0px;
 	top: 50%;
 }
 
