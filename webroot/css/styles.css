@@ -569,6 +569,11 @@ img.small {
 	color: #fff;
 }
 
+.churches {
+	overflow: hidden;
+	display: none;
+}
+
 .church {
 	margin-bottom: 20px;
 	text-align: left;

@@ -7,7 +7,7 @@
 			<div class="directory-column">
 				<h2>Orange County</h2>
 				<div class="region">
-					<a class="city" href="#brea" id="brea">Brea</a>
+					<a class="city" href="javascript:void(0)" id="brea">Brea</a>
 					<div class="churches">
 						<div class="church">
 							<h3>Southlands Church International</h3>
@@ -19,7 +19,7 @@
 							</p>
 						</div>
 					</div>
-					<a class="city" href="#costamesa" id="costamesa">Costa Mesa</a>
+					<a class="city" href="javascript:void(0)" id="costamesa">Costa Mesa</a>
 					<div class="churches">
 						<div class="church">
 							<h3>The Crossing Church</h3>
@@ -61,7 +61,7 @@
 							</p>
 						</div>
 					</div>
-					<a class="city" href="#fullerton" id="fullerton">Fullerton</a>
+					<a class="city" href="javascript:void(0)" id="fullerton">Fullerton</a>
 					<div class="churches">
 						<div class="church">
 							<h3>New Song North OC</h3>
@@ -84,7 +84,7 @@
 							</p>
 						</div>
 					</div>
-					<a class="city" href="#huntingtonbeach" id="huntingtonbeach">Huntington Beach</a>
+					<a class="city" href="javascript:void(0)" id="huntingtonbeach">Huntington Beach</a>
 					<div class="churches">
 						<div class="church">
 							<h3>Mariners Huntington Beach</h3>
@@ -107,7 +107,7 @@
 							</p>
 						</div>
 					</div>
-					<a class="city" href="#irvine" id="irvine">Irvine</a>
+					<a class="city" href="javascript:void(0)" id="irvine">Irvine</a>
 					<div class="churches">
 						<div class="church">
 							<h3>Mariners</h3>
@@ -149,7 +149,7 @@
 							</p>
 						</div>
 					</div>
-					<a class="city" href="#missionviejo" id="missionviejo">Mission Viejo</a>
+					<a class="city" href="javascript:void(0)" id="missionviejo">Mission Viejo</a>
 					<div class="churches">
 						<div class="church">
 							<h3><strong>ROCK</strong>HARBOR Mission Viejo</h3>
@@ -172,7 +172,7 @@
 							</p>
 						</div>
 					</div>
-					<a class="city" href="#orange" id="orange">Orange</a>
+					<a class="city" href="javascript:void(0)" id="orange">Orange</a>
 					<div class="churches">
 						<div class="church">
 							<h3><strong>ROCK</strong>HARBOR Orange</h3>
@@ -195,7 +195,7 @@
 							</p>
 						</div>
 					</div>
-					<a class="city" href="#yorbalinda" id="yorbalinda">Yorba Linda</a>
+					<a class="city" href="javascript:void(0)" id="yorbalinda">Yorba Linda</a>
 					<div class="churches">
 						<div class="church">
 							<h3>Yorba Linda Friends</h3>
@@ -213,7 +213,7 @@
 			<div class="directory-column">
 				<h2>Los Angeles County</h2>
 				<div class="region">
-					<a class="city" href="#longbeach" id="longbeach">Long Beach</a>
+					<a class="city" href="javascript:void(0)" id="longbeach">Long Beach</a>
 					<div class="churches">
 						<div class="church">
 							<h3>The Garden</h3>
@@ -233,7 +233,7 @@
 							</p>
 						</div>
 					</div>
-					<a class="city" href="#losangeles" id="losangeles">Los Angeles</a>
+					<a class="city" href="javascript:void(0)" id="losangeles">Los Angeles</a>
 					<div class="churches">
 						<div class="church">
 							<h3>Basileia</h3>
@@ -283,7 +283,7 @@
 							</p>
 						</div>
 					</div>
-					<a class="city" href="#pasadena" id="pasadena">Pasadena</a>
+					<a class="city" href="javascript:void(0)" id="pasadena">Pasadena</a>
 					<div class="churches">
 						<div class="church">
 							<h3>Fellowship Monrovia</h3>
@@ -296,7 +296,7 @@
 							</p>
 						</div>
 					</div>
-					<a class="city" href="#pomona" id="pomona">Pomona</a>
+					<a class="city" href="javascript:void(0)" id="pomona">Pomona</a>
 					<div class="churches">
 						<div class="church">
 							<h3>Mosaic Pomona</h3>
@@ -309,7 +309,7 @@
 							</p>
 						</div>
 					</div>
-					<a class="city" href="#whittier" id="whittier">Whittier</a>
+					<a class="city" href="javascript:void(0)" id="whittier">Whittier</a>
 					<div class="churches">
 						<div class="church">
 							<h3>Mosaic Whittier</h3>
@@ -331,3 +331,8 @@
 	<div class="bg18" />
 </div>
 
+<script>
+	$('.city').click(function() {
+		$(this).next('.churches').slideToggle();
+	})
+</script>
