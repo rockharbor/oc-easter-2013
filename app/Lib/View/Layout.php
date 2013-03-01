@@ -100,7 +100,7 @@
 						<li><a href="/pages/why-celebrate">Why Celebrate</a></li>
 						<li><a href="/pages/kids">Kids</a></li>
 						<li><a href="/pages/directions">Directions</a></li>
-						<li><a href="/pages/sponsor-a-seat">Sponsor a Seat</a></li>
+						<li><a href="https://rockharbor.webconnex.com/easter2013" target="_blank">Sponsor a Seat</a></li>
 						<li><a href="/pages/church-directory">Church Directory</a></li>
 					</ul>
 				</li>
