@@ -95,6 +95,14 @@ h3 {
 	font-size: 1.6em; /*= 16px */
 }
 
+strong {
+	font-weight: bold;
+}
+
+em {
+	font-style: italic;
+}
+
 img {
 	max-width: 100%;
 }

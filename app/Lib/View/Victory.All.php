@@ -1,8 +1,11 @@
 <section>
 	<article>
 		<h1>Share your <span class="hic">Heaven Crashing In</span> Story</h1>
-		<p>Do you have a story of heaven crashing into the world?</p>
-		<p>Claim victory and share a post below.</p>
+		<p>
+			Do you have a story of heaven crashing in?<br />
+			Do you want to claim or re-claim victory in your life? For someone else?
+		</p>
+		<p>Our world needs to hear the stories.</p>
 		<p>[All stories are moderated and could take a few hours before being published.]</p>
 		<p>
 			<a class="upload-slide-up button" href="/victory/upload">Share Your Victory</a>
