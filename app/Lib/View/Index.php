@@ -1,7 +1,6 @@
 <?php
 // for testing paragraph placement, max length ~1500 chars
 $testStory = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non porta magna. Vivamus dignissim volutpat scelerisque. Nulla convallis consectetur nisi eget bibendum. Sed semper adipiscing leo, elementum dictum metus convallis nec. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur est sapien, sagittis ac vehicula ac, laoreet vitae arcu. Quisque congue eleifend molestie. Mauris malesuada tellus ac quam venenatis pulvinar. Integer bibendum sagittis auctor. Nulla quis feugiat mauris. Vestibulum vel lectus nisi. Suspendisse vitae lacus consectetur nisl blandit pellentesque. Integer commodo odio eget quam tincidunt in vulputate lacus facilisis. Maecenas facilisis sem quis orci posuere dapibus. Vivamus quis dui est. Nunc cursus iaculis iaculis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non porta magna. Vivamus dignissim volutpat scelerisque. Nulla convallis consectetur nisi eget bibendum. Sed semper adipiscing leo, elementum dictum metus convallis nec. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur est sapien, sagittis ac vehicula ac, laoreet vitae arcu. Quisque congue eleifend molestie. Mauris malesuada tellus ac quam venenatis pulvinar. Integer bibendum sagittis auctor. Nulla quis feugiat mauris. Vestibulum vel lectus nisi. Suspendisse vitae lacus consectetur nisl blandit pellentesque. Integer commodo odio eget quam tincidunt in vulputate lacus facilisis.';
-$testVideo = '<video src="/img/vid.mp4" controls preload="none" width="700px"></video>';
 ?>
 <section class="scroll">
 
@@ -10,11 +9,23 @@ $testVideo = '<video src="/img/vid.mp4" controls preload="none" width="700px"></
 	</article>
 
 	<article id="story2">
-		<?php echo $testVideo; ?>
+		<video
+			controls
+			style="width: 700px"
+			src="http://dj543q8jb3awo.cloudfront.net/easter2013-alcohol.mp4"
+			preload="none"
+			data-streamfile="rtmp://s3jkg7i9imyu37.cloudfront.net/cfx/st/mp4:easter2013-alcohol.mp4"
+		></video>
 	</article>
 
 	<article id="story3">
-		<?php echo $testVideo; ?>
+		<video
+			controls
+			style="width: 700px"
+			src="http://dj543q8jb3awo.cloudfront.net/easter2013-body-image.mp4"
+			preload="none"
+			data-streamfile="rtmp://s3jkg7i9imyu37.cloudfront.net/cfx/st/mp4:easter2013-body-image.mp4"
+		></video>
 	</article>
 
 	<article id="story4">
@@ -22,11 +33,23 @@ $testVideo = '<video src="/img/vid.mp4" controls preload="none" width="700px"></
 	</article>
 
 	<article id="story5">
-		<?php echo $testVideo; ?>
+		<video
+			controls
+			style="width: 700px"
+			src="http://dj543q8jb3awo.cloudfront.net/easter2013-drugs.mp4"
+			preload="none"
+			data-streamfile="rtmp://s3jkg7i9imyu37.cloudfront.net/cfx/st/mp4:easter2013-drugs.mp4"
+		></video>
 	</article>
 
 	<article id="story6">
-		<?php echo $testVideo; ?>
+		<video
+			controls
+			style="width: 700px"
+			src="http://dj543q8jb3awo.cloudfront.net/easter2013-homeless.mp4"
+			preload="none"
+			data-streamfile="rtmp://s3jkg7i9imyu37.cloudfront.net/cfx/st/mp4:easter2013-homeless.mp4"
+		></video>
 	</article>
 
 	<article id="story7">
@@ -34,15 +57,23 @@ $testVideo = '<video src="/img/vid.mp4" controls preload="none" width="700px"></
 	</article>
 
 	<article id="story8">
-		<?php echo $testVideo; ?>
+		<video
+			controls
+			style="width: 700px"
+			src="http://dj543q8jb3awo.cloudfront.net/easter2013-orphan.mp4"
+			preload="none"
+			data-streamfile="rtmp://s3jkg7i9imyu37.cloudfront.net/cfx/st/mp4:easter2013-orphan.mp4"
+		></video>
 	</article>
 
 	<article id="story9">
-		<?php echo $testVideo; ?>
-	</article>
-
-	<article id="story10">
-		<?php echo $testVideo; ?>
+		<video
+			controls
+			style="width: 700px"
+			src="http://dj543q8jb3awo.cloudfront.net/easter2013-prison.mp4"
+			preload="none"
+			data-streamfile="rtmp://s3jkg7i9imyu37.cloudfront.net/cfx/st/mp4:easter2013-prison.mp4"
+		></video>
 	</article>
 
 </div>
@@ -72,8 +103,7 @@ $pagetitle = rawurlencode('OC Easter 2013');
 	class="bg6"></div><div
 	class="bg7"></div><div
 	class="bg8"></div><div
-	class="bg9"></div><div
-	class="bg10"></div>
+	class="bg9"></div>
 </div>
 
 <script>
