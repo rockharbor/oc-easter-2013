@@ -230,25 +230,6 @@ $pagetitle = rawurlencode('OC Easter 2013');
 			}
 		});
 
-
-		// configure videos
-		$('video')
-			.each(function() {
-				var w = $(this).width();
-				var h = w*9/16;
-				$(this).attr('width', w);
-				$(this).attr('height', h);
-			})
-			.mediaelementplayer({
-				pluginPath: '/js/mediaelement/build/flashmediaelement.swf',
-				success: function(media, node) {
-					if (media.pluginType !== 'native' && jQuery(node).attr('data-streamfile')) {
-						media.setSrc(jQuery(node).attr('data-streamfile'));
-						media.load();
-					}
-				}
-			});
-
 		// initialize slide, and update history if this isn't the first
 		scrollTo(w * selected);
 		showCurrent(selected === 0);

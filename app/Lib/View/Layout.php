@@ -31,6 +31,22 @@
 					})
 					return false;
 				});
+				// configure videos
+				$('video')
+					.each(function() {
+						var w = $(this).width();
+						var h = w*9/16;
+						$(this).attr('width', w);
+						$(this).attr('height', h);
+					})
+					.mediaelementplayer({
+						success: function(media, node) {
+							if (media.pluginType !== 'native' && jQuery(node).attr('data-streamfile')) {
+								media.setSrc(jQuery(node).attr('data-streamfile'));
+								media.load();
+							}
+						}
+					});
 				$('nav button').click(function() {
 					var top = $('nav').position().top;
 					if (top < 0) {
