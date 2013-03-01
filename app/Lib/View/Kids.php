@@ -12,5 +12,5 @@
 </section>
 
 <div class="background">
-	<div class="bg16" />
+	<div class="bg16"></div>
 </div>

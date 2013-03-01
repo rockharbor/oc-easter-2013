@@ -8,5 +8,5 @@
 </section>
 
 <div class="background">
-	<div class="bg17" />
+	<div class="bg17"></div>
 </div>

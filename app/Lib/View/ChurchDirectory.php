@@ -328,7 +328,7 @@
 </section>
 
 <div class="background">
-	<div class="bg18" />
+	<div class="bg18"></div>
 </div>
 
 <script>

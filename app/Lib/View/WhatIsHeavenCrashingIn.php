@@ -7,5 +7,5 @@
 </section>
 
 <div class="background">
-	<div class="bg11" />
+	<div class="bg11"></div>
 </div>

@@ -38,7 +38,7 @@
 </section>
 
 <div class="background">
-	<div class="bg14" />
+	<div class="bg14"></div>
 </div>
 
 <script>
