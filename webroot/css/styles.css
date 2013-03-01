@@ -729,6 +729,7 @@ img.small {
 	margin: 0 auto;
 	max-height: 80%;
 	padding: 5%;
+	padding-top: 10em;
 
 	overflow: hidden;
 
