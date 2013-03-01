@@ -448,6 +448,10 @@ nav ul li ul {
 	margin-top: 10px;
 }
 
+nav .hic {
+	background-image: url('/img/mark-small-black.png');
+}
+
 /*= Upload slide
 ************************************/
 .upload-slide {
