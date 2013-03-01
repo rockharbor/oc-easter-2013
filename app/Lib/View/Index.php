@@ -12,7 +12,7 @@
 
 	<article id="story1">
 		<p>On January 6th, I gathered a group of girls on the Prayer Team to pray for a 14-year old who has just been diagnosed with cancer. She was really scared and could barely tell us what was wrong and how we could pray for her. We prayed and asked God to heal her.</p>
-		<p>She went in for some follow up tests and was told that the cancer had miraculously disappeared. The doctors were baffled, but Lexi knew that she has been healed because of prayer.</p>
+		<p>She went in for some follow up tests and was told that the cancer had miraculously disappeared. The doctors were baffled, but we all knew that she had been healed because of prayer.</p>
 		<p>On February 24th, I got the chance to baptize this girl as she boldly declared that she wants to live a life dedicated to sharing her story of VICTORY and God's radical work in her life.</p>
 	</article>
 
@@ -37,7 +37,7 @@
 	</article>
 
 	<article id="story4">
-		<p>There are 163 million orphans in the world. From a very young age, I know I wanted to do something about this problem. I knew I couldn't solve it entirely, but there had to be something I could do...</p>
+		<p>There are 163 million orphans in the world. From a very young age, I knew I wanted to do something about this problem. I knew I couldn't solve it entirely, but there had to be something I could do...</p>
 		<p>My husband and I have adopted two children&mdash;one from the American foster care system, and another from Haiti. We claim victory for them as we raise them to love God and to be thankful for all the blessings they have.</p>
 	</article>
 
