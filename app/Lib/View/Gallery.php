@@ -3,26 +3,26 @@
 		<h1>Gallery</h1>
 		<p>Check out the pictures below for a glimpse of last year&apos;s Easter Celebration. </p>
 		<div class="slideshow clearfix">
-			<img src="/img/gallery/150/1.jpg" />
-			<img src="/img/gallery/150/2.jpg" />
-			<img src="/img/gallery/150/3.jpg" />
-			<img src="/img/gallery/150/4.jpg" />
-			<img src="/img/gallery/150/5.jpg" />
-			<img src="/img/gallery/150/6.jpg" />
-			<img src="/img/gallery/150/7.jpg" />
-			<img src="/img/gallery/150/8.jpg" />
-			<img src="/img/gallery/150/9.jpg" />
-			<img src="/img/gallery/150/10.jpg" />
-			<img src="/img/gallery/150/11.jpg" />
-			<img src="/img/gallery/150/12.jpg" />
-			<img src="/img/gallery/150/13.jpg" />
-			<img src="/img/gallery/150/14.jpg" />
-			<img src="/img/gallery/150/15.jpg" />
-			<img src="/img/gallery/150/16.jpg" />
-			<img src="/img/gallery/150/17.jpg" />
-			<img src="/img/gallery/150/18.jpg" />
-			<img src="/img/gallery/150/19.jpg" />
-			<img src="/img/gallery/150/20.jpg" />
+			<img src="/img/gallery/150/1.jpg" width="150" height="150" alt="Easter Celebration 2012" />
+			<img src="/img/gallery/150/2.jpg" width="150" height="150" alt="Easter Celebration 2012" />
+			<img src="/img/gallery/150/3.jpg" width="150" height="150" alt="Easter Celebration 2012" />
+			<img src="/img/gallery/150/4.jpg" width="150" height="150" alt="Easter Celebration 2012" />
+			<img src="/img/gallery/150/5.jpg" width="150" height="150" alt="Easter Celebration 2012" />
+			<img src="/img/gallery/150/6.jpg" width="150" height="150" alt="Easter Celebration 2012" />
+			<img src="/img/gallery/150/7.jpg" width="150" height="150" alt="Easter Celebration 2012" />
+			<img src="/img/gallery/150/8.jpg" width="150" height="150" alt="Easter Celebration 2012" />
+			<img src="/img/gallery/150/9.jpg" width="150" height="150" alt="Easter Celebration 2012" />
+			<img src="/img/gallery/150/10.jpg" width="150" height="150" alt="Easter Celebration 2012" />
+			<img src="/img/gallery/150/11.jpg" width="150" height="150" alt="Easter Celebration 2012" />
+			<img src="/img/gallery/150/12.jpg" width="150" height="150" alt="Easter Celebration 2012" />
+			<img src="/img/gallery/150/13.jpg" width="150" height="150" alt="Easter Celebration 2012" />
+			<img src="/img/gallery/150/14.jpg" width="150" height="150" alt="Easter Celebration 2012" />
+			<img src="/img/gallery/150/15.jpg" width="150" height="150" alt="Easter Celebration 2012" />
+			<img src="/img/gallery/150/16.jpg" width="150" height="150" alt="Easter Celebration 2012" />
+			<img src="/img/gallery/150/17.jpg" width="150" height="150" alt="Easter Celebration 2012" />
+			<img src="/img/gallery/150/18.jpg" width="150" height="150" alt="Easter Celebration 2012" />
+			<img src="/img/gallery/150/19.jpg" width="150" height="150" alt="Easter Celebration 2012" />
+			<img src="/img/gallery/150/20.jpg" width="150" height="150" alt="Easter Celebration 2012" />
 		</div>
 		<div class="slideshow-large" style="display: none">
 			<div class="slideshow-large-image">

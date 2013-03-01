@@ -101,6 +101,5 @@ section article {
 /*= Gallery
 ************************************/
 .slideshow img {
-	min-width: 49%;
 	max-width: 49%;
 }
