@@ -1,7 +1,3 @@
-<?php
-// for testing paragraph placement, max length ~1500 chars
-$testStory = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non porta magna. Vivamus dignissim volutpat scelerisque. Nulla convallis consectetur nisi eget bibendum. Sed semper adipiscing leo, elementum dictum metus convallis nec. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur est sapien, sagittis ac vehicula ac, laoreet vitae arcu. Quisque congue eleifend molestie. Mauris malesuada tellus ac quam venenatis pulvinar. Integer bibendum sagittis auctor. Nulla quis feugiat mauris. Vestibulum vel lectus nisi. Suspendisse vitae lacus consectetur nisl blandit pellentesque. Integer commodo odio eget quam tincidunt in vulputate lacus facilisis. Maecenas facilisis sem quis orci posuere dapibus. Vivamus quis dui est. Nunc cursus iaculis iaculis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non porta magna. Vivamus dignissim volutpat scelerisque. Nulla convallis consectetur nisi eget bibendum. Sed semper adipiscing leo, elementum dictum metus convallis nec. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur est sapien, sagittis ac vehicula ac, laoreet vitae arcu. Quisque congue eleifend molestie. Mauris malesuada tellus ac quam venenatis pulvinar. Integer bibendum sagittis auctor. Nulla quis feugiat mauris. Vestibulum vel lectus nisi. Suspendisse vitae lacus consectetur nisl blandit pellentesque. Integer commodo odio eget quam tincidunt in vulputate lacus facilisis.';
-?>
 <section class="scroll">
 
 	<article id="heaven-crashing-in">
@@ -15,7 +11,9 @@ $testStory = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer n
 	</article>
 
 	<article id="story1">
-		<p><?php echo $testStory; ?></p>
+		<p>On January 6th, I gathered a group of girls on the Prayer Team to pray for a 14-year old who has just been diagnosed with cancer. She was really scared and could barely tell us what was wrong and how we could pray for her. We prayed and asked God to heal her.</p>
+		<p>She went in for some follow up tests and was told that the cancer had miraculously disappeared. The doctors were baffled, but Lexi knew that she has been healed because of prayer.</p>
+		<p>On February 24th, I got the chance to baptize this girl as she boldly declared that she wants to live a life dedicated to sharing her story of VICTORY and God's radical work in her life.</p>
 	</article>
 
 	<article id="story2">
@@ -39,7 +37,8 @@ $testStory = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer n
 	</article>
 
 	<article id="story4">
-		<p><?php echo $testStory; ?></p>
+		<p>There are 163 million orphans in the world. From a very young age, I know I wanted to do something about this problem. I knew I couldn't solve it entirely, but there had to be something I could do...</p>
+		<p>My husband and I have adopted two children&mdash;one from the American foster care system, and another from Haiti. We claim victory for them as we raise them to love God and to be thankful for all the blessings they have.</p>
 	</article>
 
 	<article id="story5">
@@ -63,7 +62,8 @@ $testStory = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer n
 	</article>
 
 	<article id="story7">
-		<p><?php echo $testStory; ?></p>
+		<p>My mom has been a drug addict and alcoholic since I was born. When my siblings and I were teenagers, she had an affair, and we watched her suffer emotional and mental abuse from my dad because she was unfaithful to him. They ended up getting divorced, and we was left fatherless, and really, motherless as well. I watched her life spiral out of control, often.</p>
+		<p>Over the last few years, she started going to a Life Group, and eventually to church on Sundays. It's been crazy to see her life turn around, and change for the better. She is picking up the pieces, one by one, and is letting God have control in her life. She is finally experiencing victory, and even though it's a hard road, I know that something in her has changed for good.</p>
 	</article>
 
 	<article id="story8">
@@ -86,7 +86,7 @@ $testStory = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer n
 		></video>
 	</article>
 
-</div>
+</section>
 
 <?php
 $message = rawurlencode('OC Easter 2013 ');
