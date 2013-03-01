@@ -4,6 +4,16 @@ $testStory = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer n
 ?>
 <section class="scroll">
 
+	<article id="heaven-crashing-in">
+		<video
+			controls
+			style="width: 700px"
+			src="http://dj543q8jb3awo.cloudfront.net/easter2013-promo.mp4"
+			preload="none"
+			data-streamfile="rtmp://s3jkg7i9imyu37.cloudfront.net/cfx/st/mp4:easter2013-promo.mp4"
+		></video>
+	</article>
+
 	<article id="story1">
 		<p><?php echo $testStory; ?></p>
 	</article>
@@ -80,7 +90,7 @@ $testStory = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer n
 
 <?php
 $message = rawurlencode('OC Easter 2013 ');
-$page = rawurlencode('http://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'].'#story1');
+$page = rawurlencode('http://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'].'#heaven-crashing-in');
 $pagetitle = rawurlencode('OC Easter 2013');
 ?>
 <div class="buttons">
@@ -95,6 +105,7 @@ $pagetitle = rawurlencode('OC Easter 2013');
 
 <div class="multi background">
 <div
+	class="bg10"></div><div
 	class="bg1"></div><div
 	class="bg2"></div><div
 	class="bg3"></div><div
