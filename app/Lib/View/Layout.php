@@ -4,17 +4,10 @@
 		<title><?php echo $title; ?> | OC Easter 2013</title>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="initial-scale=1.0,width=device-width,maximum-scale=1.0,user-scalable=0" />
-		<link rel="stylesheet" href="/css/reset.css" />
-		<link rel="stylesheet" href="/js/mediaelement/build/mediaelementplayer.min.css" />
-		<link rel="stylesheet" href="/css/styles.css" />
-		<link rel="stylesheet" href="/css/mobile.css" media="screen and (max-width: 500px)" />
+		<link rel="stylesheet" href="/css/styles.min.css" />
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
 		<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.0/jquery-ui.min.js"></script>
-		<script src="/js/modernizr.js"></script>
-		<script src="/js/form/jquery.form.js"></script>
-		<script src="/js/touchswipe/jquery.touchSwipe.min.js"></script>
-		<script src="/js/lazyload/jquery.lazyload.min.js"></script>
-		<script src="/js/mediaelement/build/mediaelement-and-player.min.js"></script>
+		<script src="/js/scripts.min.js"></script>
 		<script>
 			$(document).ready(function() {
 				$(document).on('click', 'form[data-ajax]', function() {
@@ -40,6 +33,7 @@
 						$(this).attr('height', h);
 					})
 					.mediaelementplayer({
+						pluginPath: '/swf/',
 						success: function(media, node) {
 							if (media.pluginType !== 'native' && jQuery(node).attr('data-streamfile')) {
 								media.setSrc(jQuery(node).attr('data-streamfile'));
