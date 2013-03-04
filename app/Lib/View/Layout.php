@@ -37,6 +37,11 @@
 					})
 					return false;
 				});
+
+				window.replaceContent = function(data) {
+					$(this).closest('.content').html(data);
+				}
+
 				// configure videos
 				$('video')
 					.each(function() {
