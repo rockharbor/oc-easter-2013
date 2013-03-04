@@ -10,12 +10,25 @@
 		<script src="/js/scripts.min.js"></script>
 		<script>
 			$(document).ready(function() {
-				$(document).on('click', 'form[data-ajax]', function() {
+				$(document).on('click', '[data-ajax]', function() {
 					var el = $(this);
 					var context = this;
+
+					var url, method;
+					if (this.tagName.toLowerCase() === 'form') {
+						url = el.prop('action');
+						method =  el.prop('method');
+						data = el.serialize();
+					} else {
+						url = el.prop('href');
+						method = 'GET';
+						data = [];
+					}
+
 					$.ajax({
-						url: el.prop('action'),
-						type: el.prop('method'),
+						url: url,
+						type: method,
+						data: data,
 						success: function(data, status, xhr) {
 							window[el.data('ajax')].apply(context, [
 								data, status, xhr
