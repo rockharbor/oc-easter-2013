@@ -28,6 +28,14 @@ class Upload extends Page {
 	public function POST() {
 		$this->set('title', 'Share A Story');
 		$success = false;
+		if (is_string($_POST['file'])) {
+			$_FILES = array(
+				'file' => array(
+					'type' => 'image/jpg',
+					'tmp_name' => WEBROOT . DS . 'img' . DS . $_POST['file']
+				)
+			);
+		}
 		if (!$this->validate($_FILES)) {
 			$this->set('error', $this->error);
 			$this->render('Upload');
