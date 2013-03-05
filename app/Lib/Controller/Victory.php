@@ -16,6 +16,12 @@ class Victory extends Upload {
 				if (empty($result)) {
 					$this->set('error', 'Invalid image.');
 				}
+				if (isset($matches[2]) && $matches[2] == 'download=1') {
+					header('Content-type: image/png');
+					header('Content-disposition: attachment;');
+					echo file_get_contents($this->finishedStorePath . DS . $filename);
+					exit();
+				}
 				$this->set('result', $result[0]);
 			}
 
