@@ -12,6 +12,10 @@
 				<input type="submit" value="Upload" />
 			</form>
 		</div>
+		<div class="choose">
+			<em>OR</em>
+			<a href="/victory/choose" class="button" data-ajax="replaceContent">Choose A Photo</a>
+		</div>
 		<div class="loading" style="display: none">
 			<img src="/img/loading.gif" />
 		</div>

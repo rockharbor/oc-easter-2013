@@ -15,6 +15,7 @@ $routes = array(
 	'/victory/upload' => 'Upload',
 	'/victory/process/([a-zA-Z0-9]+\.png)' => 'Process',
 	'/victory/view/?([a-zA-Z0-9]+\.png)?' => 'Victory',
+	'/victory/choose' => 'Choose',
 	'/image/([a-zA-Z0-9]+\.png)' => 'Image',
 	'/admin/approve/([a-zA-Z0-9]+\.png)?' => 'Admin',
 	'/pages/?([a-zA-Z0-9-]+)\??(.+)?' => 'Page',

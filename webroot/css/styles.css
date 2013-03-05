@@ -515,6 +515,21 @@ nav .hic {
 	display: none;
 }
 
+.choose {
+	display: inline-block;
+	position: relative;
+}
+
+.choose-photos form {
+	display: inline-block;
+	float: left;
+}
+
+.choose-photos input[type=image] {
+	max-width: 24%;
+	margin-right: 1%;
+}
+
 /*= Admin
 ************************************/
 img.small {
