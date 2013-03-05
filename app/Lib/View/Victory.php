@@ -16,6 +16,7 @@
 			?>
 			<a href="http://twitter.com/home?status=<?php echo $message.$page; ?>" target="_blank" class="twitter">Twitter</a>
 			<a href="http://www.facebook.com/sharer.php?u=<?php echo $page; ?>&t=<?php echo $pagetitle; ?>" target="_blank" class="facebook">Facebook</a>
+			<a href="/victory/view/<?php echo $result->filename; ?>?download=1" class="download">Download</a>
 		</p>
 		<?php endif; ?>
 	</article>
