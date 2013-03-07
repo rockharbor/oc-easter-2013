@@ -4,7 +4,7 @@ class Victory extends Upload {
 
 	public function GET($matches) {
 		$this->set('title', 'Share A Story');
-		$filename = $matches[1];
+		$filename = isset($matches[1]) ? $matches[1] : false;
 
 		$db = new Db();
 
