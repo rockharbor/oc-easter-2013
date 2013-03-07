@@ -1,4 +1,5 @@
 <?php
+define('DEBUG', false);
 define('DS', DIRECTORY_SEPARATOR);
 define('APP', dirname(dirname(__FILE__)) . DS . 'app');
 define('WEBROOT', dirname(dirname(__FILE__)) . DS . 'webroot');
