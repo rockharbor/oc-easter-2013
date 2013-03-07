@@ -394,10 +394,24 @@ h1 .hic {
 }
 
 #story10 {
-	top: 50%;
-	left: 50px;
+	width: 400px;
 
-	margin-top: -197px; /*= videoheight/2 */
+	top: 391px;
+	left: 251px;
+}
+
+#story11 {
+	width: 400px;
+
+	top: 300px;
+	right: 230px;
+}
+
+#story12 {
+	width: 400px;
+	
+	top: 150px;
+	right: 110px;
 }
 
 /*= Nav
@@ -721,6 +735,18 @@ img.small {
 
 .bg19 {
 	background-image: url('/img/19.jpg');
+}
+
+.bg20 {
+	background-image: url('/img/20.jpg');
+}
+
+.bg21 {
+	background-image: url('/img/21.jpg');
+}
+
+.bg22 {
+	background-image: url('/img/22.jpg');
 }
 
 /*= Video Player

@@ -27,7 +27,9 @@ section article {
 #story7,
 #story8,
 #story9,
-#story10
+#story10,
+#story11,
+#story12
 {
 	margin-left: auto;
 	margin-top: auto;
@@ -38,7 +40,10 @@ section article {
 /* text stories */
 #story1,
 #story4,
-#story7
+#story7,
+#story10,
+#story11,
+#story12
 {
 	width: 100%;
 	top: 70px;

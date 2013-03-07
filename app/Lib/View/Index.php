@@ -86,6 +86,21 @@
 		></video>
 	</article>
 
+	<article id="story10">
+		<p>I woke up after a night of drinking in Vegas and my hand was in excruciating pain – bruised black and blue. I had absolutely no recollection of what had happened or how it ended up that way. After going to the doctor for my hand, I was diagnosed with an auto-immune disease.</p>
+		<p>Months later, a friend and I googled churches and found ourselves sitting in the seats the next Sunday. For some reason, that was the only place I wanted to be. I ended up asking for prayer for my hand. A few days later, my hand was healed and there was no trace of that disease. I still can't explain it. It's a miracle.</p>
+	</article>
+
+	<article id="story11">
+		<p>I dealt drugs in high school. Even though I made money doing it, I couldn't find a way for it to make me happy.</p>
+		<p>One day I watched this video of an ex-addict and famous musician talk about being happy because he found Jesus. It's hard to imagine, but my life has been different ever since; I've given up drugs and alcohol, and now dedicate my time to working with high school students. I tell them the simple truth that using can never make them happy.</p>
+	</article>
+
+	<article id="story12">
+		<p>I grew up without a father. When I was a baby, mine committed suicide – and so I never got to meet him. Every time someone talked about their dad or mentioned how awesome their family life was...I felt a sharp pain stabbing at my heart. I would never know of that kind of life.</p>
+		<p>Now many years later, I still don't have a father. But what I do have is people around me – friends and family – that love me and care for me. It doesn't replace a father's love...but it does make it easier. Because of these great people in my life, I now work with foster kids and orphans who might feel the same way I used to. I want them to know that they are loved!</p>
+	</article>
+
 </section>
 
 <?php
@@ -114,7 +129,10 @@ $pagetitle = rawurlencode('OC Easter 2013');
 	class="bg6"></div><div
 	class="bg7"></div><div
 	class="bg8"></div><div
-	class="bg9"></div>
+	class="bg9"></div><div
+	class="bg20"></div><div
+	class="bg21"></div><div
+	class="bg22"></div>
 </div>
 
 <script>
