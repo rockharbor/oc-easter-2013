@@ -62,7 +62,7 @@
 	</article>
 
 	<article id="story7">
-		<p>My mom has been a drug addict and alcoholic since I was born. When my siblings and I were teenagers, she had an affair, and we watched her suffer emotional and mental abuse from my dad because she was unfaithful to him. They ended up getting divorced, and we was left fatherless, and really, motherless as well. I watched her life spiral out of control, often.</p>
+		<p>My mom has been a drug addict and alcoholic since I was born. When my siblings and I were teenagers, she had an affair, and we watched her suffer emotional and mental abuse from my dad because she was unfaithful to him. They ended up getting divorced, and we were left fatherless, and really, motherless as well. I watched her life spiral out of control, often.</p>
 		<p>Over the last few years, she started going to a Life Group, and eventually to church on Sundays. It's been crazy to see her life turn around, and change for the better. She is picking up the pieces, one by one, and is letting God have control in her life. She is finally experiencing victory, and even though it's a hard road, I know that something in her has changed for good.</p>
 	</article>
 
