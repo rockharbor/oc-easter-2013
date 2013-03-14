@@ -10,6 +10,21 @@
 		></video>
 	</article>
 
+	<article id="story13">
+		<p>For most of my life, I hated the church and Christians and everything that had to do with any religious thing. I always felt ridiculed and judged, and never once had an encounter with a "Jesus follower" that was positive. Two years ago, my in-laws dragged me [kicking and screaming] to an Easter church service.</p>
+		<p>I can't describe what happened to me that day but what I do know is that I am not the same person that walked into that service. All the bitterness and anger toward the Church and Christians suddenly disappeared. Now I am excited when I meet someone who is angry or bitter toward the Church, because I can share my experience with them and tell them about the God who showed me His deep love, even when I was not looking for it.</p>
+	</article>
+
+	<article id="story14">
+		<p>A few weeks ago in church the pastor told us to pray for the very last person on Earth that we thought would become a Christian. Instantly my brother came to mind. </p>
+		<p>I wrote his name down and committed to praying for him daily. If I am honest, I didn't fully expect something to happen...at least not right away. Little did I know that God was already at work in my brother's life. Within a few weeks of me starting to pray for him, I got a call from my brother saying that He made a decision to follow Jesus.</p>
+	</article>
+
+	<article id="story15">
+		<p>Two years ago my brother died. It was the hardest thing that I ever went through. It shook me to my very core. In a time of great loneliness, I found myself asking a couple of friends for more and more of their time. They allowed me to vent, to cry, and even to get angry. They listened.</p>
+		<p>Something about them giving their time to listen, to engage in my story, to sit across from me and really care how I was doing gave me hope.</p>
+	</article>
+
 	<article id="story1">
 		<p>On January 6th, I gathered a group of girls on the Prayer Team to pray for a 14-year old who has just been diagnosed with cancer. She was really scared and could barely tell us what was wrong and how we could pray for her. We prayed and asked God to heal her.</p>
 		<p>She went in for some follow up tests and was told that the cancer had miraculously disappeared. The doctors were baffled, but we all knew that she had been healed because of prayer.</p>
@@ -121,6 +136,9 @@ $pagetitle = rawurlencode('OC Easter 2013');
 <div class="multi background">
 <div
 	class="bg10"></div><div
+	class="bg23"></div><div
+	class="bg24"></div><div
+	class="bg25"></div><div
 	class="bg1"></div><div
 	class="bg2"></div><div
 	class="bg3"></div><div

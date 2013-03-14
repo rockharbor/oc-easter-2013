@@ -414,6 +414,27 @@ h1 .hic {
 	right: 110px;
 }
 
+#story13 {
+	width: 400px;
+
+	top: 280px;
+	left: 110px;
+}
+
+#story14 {
+	width: 400px;
+
+	top: 150px;
+	right: 110px;
+}
+
+#story15 {
+	width: 400px;
+
+	top: 500px;
+	right: 110px;
+}
+
 /*= Nav
 ************************************/
 nav {
@@ -748,6 +769,18 @@ img.small {
 
 .bg22 {
 	background-image: url('/img/22.jpg');
+}
+
+.bg23 {
+	background-image: url('/img/23.jpg');
+}
+
+.bg24 {
+	background-image: url('/img/24.jpg');
+}
+
+.bg25 {
+	background-image: url('/img/25.jpg');
 }
 
 /*= Video Player
