@@ -7,6 +7,7 @@
 			src="http://dj543q8jb3awo.cloudfront.net/easter2013-promo.mp4"
 			preload="none"
 			data-streamfile="rtmp://s3jkg7i9imyu37.cloudfront.net/cfx/st/mp4:easter2013-promo.mp4"
+			poster="/img/poster-main.jpg"
 		></video>
 		<p>
 			There is a battle going on around us.<br />

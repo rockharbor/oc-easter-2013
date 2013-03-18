@@ -7,6 +7,7 @@
 			src="http://dj543q8jb3awo.cloudfront.net/easter2013-promo.mp4"
 			preload="none"
 			data-streamfile="rtmp://s3jkg7i9imyu37.cloudfront.net/cfx/st/mp4:easter2013-promo.mp4"
+			poster="/img/poster-main.jpg"
 		></video>
 	</article>
 
@@ -38,6 +39,7 @@
 			src="http://dj543q8jb3awo.cloudfront.net/easter2013-alcohol.mp4"
 			preload="none"
 			data-streamfile="rtmp://s3jkg7i9imyu37.cloudfront.net/cfx/st/mp4:easter2013-alcohol.mp4"
+			poster="/img/poster.jpg"
 		></video>
 	</article>
 
@@ -48,6 +50,7 @@
 			src="http://dj543q8jb3awo.cloudfront.net/easter2013-body-image.mp4"
 			preload="none"
 			data-streamfile="rtmp://s3jkg7i9imyu37.cloudfront.net/cfx/st/mp4:easter2013-body-image.mp4"
+			poster="/img/poster.jpg"
 		></video>
 	</article>
 
@@ -63,6 +66,7 @@
 			src="http://dj543q8jb3awo.cloudfront.net/easter2013-drugs.mp4"
 			preload="none"
 			data-streamfile="rtmp://s3jkg7i9imyu37.cloudfront.net/cfx/st/mp4:easter2013-drugs.mp4"
+			poster="/img/poster.jpg"
 		></video>
 	</article>
 
@@ -73,6 +77,7 @@
 			src="http://dj543q8jb3awo.cloudfront.net/easter2013-homeless.mp4"
 			preload="none"
 			data-streamfile="rtmp://s3jkg7i9imyu37.cloudfront.net/cfx/st/mp4:easter2013-homeless.mp4"
+			poster="/img/poster.jpg"
 		></video>
 	</article>
 
@@ -88,6 +93,7 @@
 			src="http://dj543q8jb3awo.cloudfront.net/easter2013-orphan.mp4"
 			preload="none"
 			data-streamfile="rtmp://s3jkg7i9imyu37.cloudfront.net/cfx/st/mp4:easter2013-orphan.mp4"
+			poster="/img/poster.jpg"
 		></video>
 	</article>
 
@@ -98,6 +104,7 @@
 			src="http://dj543q8jb3awo.cloudfront.net/easter2013-prison.mp4"
 			preload="none"
 			data-streamfile="rtmp://s3jkg7i9imyu37.cloudfront.net/cfx/st/mp4:easter2013-prison.mp4"
+			poster="/img/poster.jpg"
 		></video>
 	</article>
 
