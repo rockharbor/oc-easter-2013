@@ -51,7 +51,7 @@
 							</p>
 						</div>
 						<div class="church">
-							<h3><strong>ROCK</strong>HARBOR Central</h3>
+							<h3><strong>ROCK</strong>HARBOR Costa Mesa</h3>
 							<p>
 								714-384-0914<br />
 								<a target="_blank" href="http://www.rockharbor.org">www.rockharbor.org</a><br />
@@ -293,31 +293,6 @@
 								Monrovia High School<br />
 								845 W. Colorado Blvd., Monrovia<br />
 								Sundays | 9am &amp; 11am
-							</p>
-						</div>
-					</div>
-					<a class="city" href="javascript:void(0)" id="pomona">Pomona</a>
-					<div class="churches">
-						<div class="church">
-							<h3>Mosaic Pomona</h3>
-							<p>
-								626-628-9640<br />
-								<a target="_blank" href="http://www.mosaic.org">www.mosaic.org</a><br />
-								The Fox Theater<br />
-								301 South Garey Ave., Pomona<br />
-								Sundays | 10am
-							</p>
-						</div>
-					</div>
-					<a class="city" href="javascript:void(0)" id="whittier">Whittier</a>
-					<div class="churches">
-						<div class="church">
-							<h3>Mosaic Whittier</h3>
-							<p>
-								626-628-9640<br />
-								<a target="_blank" href="http://www.mosaic.org">www.mosaic.org</a><br />
-								7320 Greenleaf Ave., Whittier<br />
-								Sundays | 10am
 							</p>
 						</div>
 					</div>
